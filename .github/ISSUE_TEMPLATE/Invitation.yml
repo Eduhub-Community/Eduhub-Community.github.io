@@ -13,7 +13,7 @@ body:
   - type: input
     id: username
     attributes:
-      label: WhatsApp Username
+      label: GitHub Username
       placeholder: enter your WhatsApp username here.
     validations:
       required: false
