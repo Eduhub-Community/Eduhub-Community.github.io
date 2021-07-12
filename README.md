@@ -51,9 +51,9 @@ Instructions on how to use them in your own application are linked below.</p>
 <tbody></tbody>
 
 <h2 class="code-line" data-line-start=63 data-line-end=64 ><a id="Development_63"></a>Development</h2>
-<p class="has-line-data" data-line-start="65" data-line-end="66">Want to contribute? Great! VIsit the guide link below</p>
+<p class="has-line-data" data-line-start="65" data-line-end="66">Want to contribute? Great!</p>
 <ul>
-<li class="has-line-data" data-line-start="66" data-line-end="69"><a href="https://github.com/Eduhub-Community/Eduhub/blob/main/CONTRIBUTE.md">CONTRIBUTE.md</a></li>
+<li class="has-line-data" data-line-start="66" data-line-end="69">Visit this guide link: <a href="https://github.com/Eduhub-Community/Eduhub/blob/main/CONTRIBUTE.md">CONTRIBUTE.md</a></li>
 </ul>
 
 <h2 class="code-line" data-line-start=116 data-line-end=117 ><a id="License_116"></a>License</h2>
