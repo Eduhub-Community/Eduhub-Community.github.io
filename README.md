@@ -63,7 +63,7 @@ Instructions on how to use them in your own application are linked below.</p>
 	
 <h1 align=center> Project Admin ❤️ </h1>
 <p align="center">
-  <a href="https://github.com/SahityaRoy"><img src="https://media-exp1.licdn.com/dms/image/C5603AQFK5UqgVb7CqQ/profile-displayphoto-shrink_400_400/0/1621068294371?e=1630540800&v=beta&t=rgRANljo1FJ_yhpHW5qvbuB5SbD5xqPGglnL-CWUte4" width=150px height=150px /></a> 
+  <a href="https://github.com/SahityaRoy"><img src="https://avatars.githubusercontent.com/u/72821604?v=4" width=150px height=150px /></a> 
     
 <p align="center">
   <a target="_blank"href="https://www.linkedin.com/in/sahitya-roy/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
