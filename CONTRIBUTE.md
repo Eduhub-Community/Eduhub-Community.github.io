@@ -1,4 +1,4 @@
-<h2>CONTRIBUTE TO OUR COMMUNITY</h2>
+<h2>CONTRIBUTE TO OUR COMMUNITY 🚀</h2>
 <p>Idea + Implement = Success!<br/>
 Make a change in your file and instantaneously see your updates!<br/>
 </p>
