@@ -1,44 +1,29 @@
-name: Invite me to your Organization
-description: I would like to be part of your Community.
-title: "[Issue]: Invite me to the GitHub Community Organization"
+name: Invitation to the Community
+description: I would like to be part of your Organization.
+title: "Please invite me to be part of your Community"
+labels: [invite me to the organization]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
   - type: input
-    id: contact
+    id: name
     attributes:
-      label: Name:
-      description: Name:
-      placeholder: enter your email here.
+      label: Name
+      placeholder: enter your name here.
     validations:
       required: true
+  - type: input
+    id: username
+    attributes:
+      label: WhatsApp Username
+      placeholder: enter your WhatsApp username here.
+    validations:
+      required: false
   - type: textarea
-    id: what-happened
+    id: addcontext
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Additional Context
+      value: "Where did you find Eduhub? What are your expectations to this community? Why do you want to join Eduhub?"
     validations:
-      required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-    validations:
-      required: true
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
+      required: false
   - type: checkboxes
     id: terms
     attributes:
