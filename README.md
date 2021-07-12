@@ -15,7 +15,7 @@
 <li class="has-line-data" data-line-start="4" data-line-end="5">Type some Markdown on the left</li>
 <li class="has-line-data" data-line-start="5" data-line-end="6">See HTML in the right</li>
 <li class="has-line-data" data-line-start="6" data-line-end="8">✨Magic ✨</li>
-<li class="has-line-data" data-line-start="6" data-line-end="8">First start⭐ this repo and fork so that you can work </li?
+<li class="has-line-data" data-line-start="6" data-line-end="8">First start⭐ this repo and fork so that you can work </li>
 </ul>
 <h2 class="code-line" data-line-start=8 data-line-end=9 ><a id="Features_8"></a>Features</h2>
 <ul>
