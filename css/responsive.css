@@ -1,0 +1,389 @@
+/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+ @media (min-width: 1200px) and (max-width: 1500px) {
+     .banner_main .carousel-caption h1 {
+         font-size: 64px;
+         line-height: 80px;
+         padding-bottom: 36px;
+    }
+     .right_header_info ul li {
+         font-size: 14px;
+         margin-left: 12px;
+    }
+     .slider_cont h3 {
+         font-size: 36px;
+         line-height: 45px;
+    }
+     .slider_cont p {
+         margin-top: 10px;
+         margin-bottom: 5px 
+    }
+     .black_white {
+         color: #000;
+    }
+    .main_form {padding-left: 100px;}
+    ul.mail-icon li {margin-bottom: 10px;}
+     .about_box_text {
+        padding-left: 35px;
+         padding-right: 50px;
+         padding-bottom: 50px;
+    }
+     .about_box_text .title {
+        padding-top: 50px;
+         padding-bottom: 60px;
+    }
+     .slider_section {
+         min-height: inherit;
+    }
+}
+ @media (min-width: 992px) and (max-width: 1199px) {
+     .slider_section {
+         min-height: inherit;
+    }
+     .relative {
+        top: 64%;
+    }
+     .banner_main .carousel-caption h1 {
+        font-size: 65px;
+         line-height: 70px;
+         padding-bottom: 56px;
+    }
+     .top_layer::before {
+        display: none;
+    }
+     .navbar-expand-md .navbar-nav .nav-link {
+        padding: 15px 37px;
+    }
+     .black_white {
+         color: #000;
+    }
+     .pricing_box_cross::after {
+        width: 91%;
+    }
+     .about_box_text .title {
+        padding-top: 30px;
+    }
+     .about_box_text p {
+        font-size: 15px;
+         line-height: 25px;
+    }
+     .about_box_text {
+        padding-left: 39px;
+    }
+     .main_form {
+        padding-left: 30px;
+    }
+     ul.mail-icon li img {
+        padding-right: 5px;
+    }
+     ul.mail-icon li {
+        font-size: 13px;
+         padding-right: 8px;
+         padding-bottom: 10px;
+    }
+}
+ @media (min-width: 768px) and (max-width: 991px) {
+     .top_layer::before {
+        display: none;
+    }
+     .right_header_info ul li {
+         margin-left: 32px;
+    }
+     .slider_section {
+         min-height: inherit;
+         padding-top: 128px;
+    }
+     .navbar-expand-md .navbar-nav .nav-link {
+        padding: 15px 29px;
+    }
+     .banner_main .carousel-caption h1 {
+        font-size: 65px;
+         line-height: 70px;
+         padding-bottom: 56px;
+    }
+     .email {
+        display: none;
+    }
+     .contact_nu {
+        display: none;
+    }
+     .about_box_text {
+        padding-left: 15px;
+         padding-right: 50px;
+         padding-bottom: 48px;
+    }
+     .about_box {
+        margin-right: 0px;
+    }
+     .about_box_text .title {
+        padding-top: 48px;
+         padding-bottom: 60px;
+    }
+     .yogo_three_box h3 {
+        font-size: 20px;
+    }
+     .yogo_three_box p {
+        font-size: 14px;
+    }
+     .pricing_box_cross::after {
+        width: 88%;
+    }
+     .pricing .pricing_box p {
+        font-size: 16px;
+    }
+     .pricing .pricing_box_cross p {
+        font-size: 16px;
+    }
+     .Newsletter .news h2 {
+        font-size: 53px;
+    }
+     .yoga .title h2 {
+        font-size: 53px;
+    }
+     ul.mail-icon li {
+         padding-bottom: 10px;
+    }
+     .main_form {
+         padding: 51px 24px;
+    }
+     .copyright p {
+         font-size: 16px;
+    }
+}
+ @media (min-width: 576px) and (max-width: 767px) {
+    
+     .navbar-dark .navbar-toggler {
+        background: #000;
+    }
+     .navbar-expand-md .navbar-nav .nav-link {
+        text-align: left;
+        padding: 15px 0;
+    }
+     .bg {
+        padding: 10px 0;
+         background-color: #5ab337;
+    }
+     .banner_main .carousel-caption h1 {
+        font-size: 41px;
+         line-height: 47px;
+         padding-bottom: 56px;
+    }
+     .banner_main .carousel-caption a {
+        max-width: 181px;
+    }
+     .top_layer::before {
+        display: none;
+    }
+     .logo {
+         text-align: center;
+         display: block;
+    }
+     .email {
+        display: none;
+    }
+     .contact_nu {
+        display: none;
+    }
+     .slider_section {
+         min-height: inherit;
+         padding-top: 137px;
+    }
+     .about_box {
+        margin-right: 0px;
+    }
+     .about_box_text {
+        padding: 33px;
+    }
+     .about_box_text .title {
+        padding-top: 0px;
+    }
+     .yogo_three_box {
+        margin-bottom: 20px;
+    }
+     .yogo_three_box figure {
+         margin: 0;
+         text-align: center;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+    }
+     .readmore {
+        margin: 0 auto;
+    }
+     .pricing_box_cross::after {
+        width: 95%;
+    }
+     .pricing_box_cross {
+        padding-bottom: 76px;
+    }
+     .pricing .pricing_box {
+        margin-bottom: 20px;
+    }
+     .pricing_box_cross {
+        margin-bottom: 20px;
+    }
+     .yoga .title h2 {
+        font-size: 40px;
+    }
+     .yoga .yoga_box img {
+        margin-top: -50px;
+         padding-bottom: 50px !important;
+         padding: 0px 50px;
+    }
+     .yourlifeyoga .yogatitle h2 {
+        font-size: 55px;
+    }
+     .Newsletter .news h2 {
+        font-size: 40px;
+    }
+     ul.mail-icon li {
+        margin-bottom: 10px;
+    }
+     .main_form {
+         padding-left: 15px;
+    }
+     .padddd {
+         padding-left: 0px;
+         padding-right: 0;
+    }
+     .title h2 {
+         font-size: 49px;
+         line-height: 35px;
+    }
+     .mar_bottom {
+         margin-bottom: 0px;
+    }
+     .black_white {
+         color: #000;
+    }
+     .main_form {
+         padding-left: 15px;
+    }
+}
+ @media (max-width: 575px) {
+     .navbar-dark .navbar-toggler {
+        background: #000;
+    }
+     .navbar-expand-md .navbar-nav .nav-link {
+        text-align: left;
+        padding: 15px 0;
+    }
+     .logo {
+         text-align: center;
+         display: block;
+    }
+     .bg {
+         background-color: #5ab337;
+         padding: 10px 0;
+    }
+     .email {
+        display: none;
+    }
+     .contact_nu {
+        display: none;
+    }
+     .title h2 {
+         font-size: 45px;
+         line-height: 55px;
+    }
+     .title span {
+         font-size: 15px;
+    }
+     .pppp {
+         padding: 0 15px !important;
+    }
+     .mar_bottom {
+         margin-bottom: 0px;
+    }
+     .black_white {
+         color: #000;
+    }
+     .banner_main .carousel-caption h1 {
+         font-size: 42px;
+         line-height: 46px;
+         padding-bottom: 51px;
+         padding-top: 14px;
+    }
+     .banner_main .carousel-caption a {
+         max-width: 172px;
+    }
+     .banner_main .carousel-item img {
+         height: 450px;
+    }
+     .top_layer::before {
+        display: none;
+    }
+     .about_box {
+        margin-right: 0px;
+    }
+     .about_box_text {
+        padding-left: 20px;
+         padding-right: 20px;
+         padding-bottom: 40px;
+    }
+     .about_box_text .title {
+        padding-top: 29px;
+         padding-bottom: 40px;
+    }
+     .about_box_text p {
+        font-size: 18px;
+         line-height: 29px;
+    }
+     .yogo_three_box {
+        margin-bottom: 20px;
+    }
+     .readmore {
+        margin: auto;
+    }
+     .yourlifeyoga .yogatitle h2 {
+        font-size: 33px;
+         line-height: 42px;
+    }
+     .pricing .pricing_box {
+        margin-bottom: 20px;
+    }
+     .pricing_box_cross {
+        padding-bottom: 75px;
+         padding-bottom: 75px;
+    }
+     .pricing_box_cross::after {
+         width: 90%;
+         height: 70px;
+         left: 16px;
+         bottom: -3px;
+    }
+     .slider_section {
+        padding-top: 159px;
+    }
+     .Newsletter .news h2 {
+        font-size: 31px;
+         line-height: 44px;
+    }
+     .yoga .title h2 {
+        font-size: 44px;
+         line-height: 47px;
+    }
+     .yoga .yoga_box img {
+        margin-top: -32px;
+         padding-bottom: 32px !important;
+         padding: 0px 19px;
+    }
+     ul.mail-icon li {
+        font-size: 13px;
+         padding-bottom: 20px;
+    }
+    .contact .title h2 {font-size: 55px;}
+     .main_form {
+         padding: 62px 18px;
+         margin-right: 0px;
+    }
+   
+     ul.social_icon {
+         display: none 
+    }
+     .copyright p {
+         font-size: 22px;
+    }
+     ul.social_top_icon li {
+         padding-right: 2px;
+    }
+}
