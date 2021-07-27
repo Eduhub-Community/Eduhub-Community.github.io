@@ -557,14 +557,8 @@ header .container-fluid {
 }
 .social-icons {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
-}
-
-/* Change the flex direction to column on mobiles */
-@media (max-width: 600px) {
-  .social-icons {
-    flex-direction: column;
-  }
 }
 
 .social-icons li {
