@@ -1,0 +1,26 @@
+header{
+    text-align: center;
+    margin: 4%;
+    font-size: 3rem;
+    color: blueviolet;
+}
+.icon{
+float:left; 
+height:700px;
+width:700px; 
+border: 1px solid black;
+border-radius: 0.5rem;
+
+
+}
+.events{
+    width:90%;
+    height:auto;
+    padding-left: 3%;
+    align-self: center;
+    display: flex;
+
+}
+.about{
+    margin-left: 4%;
+}
