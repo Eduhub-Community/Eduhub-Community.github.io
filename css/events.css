@@ -1,27 +1,51 @@
 
-    header{
-    text-align: center;
-    margin: 4%;
-    font-size: 3rem;
-    color: blueviolet;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.icon{
-float:left; 
-height:700px;
-width:700px; 
-border: 1px solid black;
-border-radius: 0.5rem;
-
-
+html,body{   
+    font-family: "Roboto", sans-serif;
 }
-.events{
-    width:90%;
-    height:auto;
-    padding-left: 3%;
-    align-self: center;
+.events-container{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px grey;
+}
+.card-image{
+    background-color: lightblue;
+    height:160px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-1{
+    background-image: url("../images/event-1.png");
+}
+.card-2{
+    background-image: url("../images/event-2.png");
+
+} 
+.card-3{
+    background-image: url("../images/event-3.png");
+}
+.card-4{
+    background-image: url("../images/event-4.png");
 
 }
-.about{
-    margin-left: 4%;
+
+.card h2{
+    padding: 5px;
+}
+.card p{
+    padding: 5px;
 }
