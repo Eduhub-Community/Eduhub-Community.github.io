@@ -29,20 +29,33 @@ html,body{
 }
 
 .card-1{
-    background-image: url("../images/event-1.png");
+    background-image: url("../images/Events/event-1.png");
 }
 .card-2{
-    background-image: url("../images/event-2.png");
+    background-image: url("../images/Events/event-2.png");
 
 } 
 .card-3{
-    background-image: url("../images/event-3.png");
+    background-image: url("../images/Events/event-3.png");
 }
 .card-4{
-    background-image: url("../images/event-4.png");
+    background-image: url("../images/Events/event-4.png");
 
 }
+.card-5{
+    background-image: url("../images/Events/event-5.png");
+}
+.card-6{
+    background-image: url("../images/Events/event-6.png");
 
+} 
+.card-7{
+    background-image: url("../images/Events/event-7.png");
+}
+.card-8{
+    background-image: url("");
+
+}
 .card h2{
     padding: 5px;
 }
