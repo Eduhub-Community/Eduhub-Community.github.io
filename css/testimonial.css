@@ -1,0 +1,117 @@
+
+.testimonial{
+	float: left;
+	padding: 20px 0;
+	background: #fcfcfd;
+	z-index: -1;
+	width: 100%;
+	text-align: center;
+}
+.testimonial .section-title{
+	float: left;
+	width: 100%;
+	padding-bottom: 0px; 
+}
+.testimonial .section-title h2 {
+	float: left;
+	width: 100%;
+	text-align: center;
+	color: #0eb493;
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+.testimonial .swiper-container {
+	width: 100%;
+	height: 100%;
+}
+.testimonial .testi-item {
+	transition: all .3s ease-in-out;
+	transform: scale(0.9);
+	opacity: 0.9;
+	margin: 30px;
+}
+.testimonial .para{
+    background: gainsboro;
+    padding: 30px;
+    border-radius: 10%;
+    font-style: italic;
+	text-align: justify;
+	line-height: 23px;
+}
+.testimonial .para p{
+	font-size: 16px;
+	display: inline;
+	word-spacing: 10px;
+	
+}
+.testimonial i.quote{
+    font-size: 20px;
+    color: #17a2b8;
+}
+.testimonial .name{
+	text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    left: 0px;
+    top: -30px;
+}
+.testimonial .job{
+	text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    left: 0px;
+    top: -30px;
+}
+.testimonial .image{
+    height: 70px;
+    width: 70px;
+    padding: 4px;
+    background:  gainsboro;
+    border-radius: 50%;
+    position: relative;
+    left: 30px;
+    top:-40px;
+}
+.testimonial .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-sizing: border-box;
+    /* border: 2px solid #fff; */
+}
+.testimonial .swiper-slide-active .testi-item{
+	opacity: 1;
+	transform: scale(1.0);
+}
+.testimonial .tc-pagination{
+	float: left;
+	margin-top: 10px;
+	width: 100% !important;
+}
+.testimonial .tc-pagination .swiper-pagination-bullet, .tc-pagination2.swiper-pagination-bullet{
+	opacity: 1;
+	background: #384f95;
+	margin:10px 5px;
+	width: 15px;
+	height: 15px;
+	transition: all 300ms ease-in-out;
+}
+
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-wrapper {
+    width: 50%;
+}
+
+.swiper-slide {
+    text-align: center;
+    width: auto;
+}
+

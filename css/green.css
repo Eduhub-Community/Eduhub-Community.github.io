@@ -1,0 +1,69 @@
+/* ------------------------------------------------------------------- */
+/* Green #58ba2b
+---------------------------------------------------------------------- */
+#current,
+a.button.gray.app-link.opened,
+ul.float-right li a:hover,
+.menu ul li.sfHover a.sf-with-ul,
+.menu ul li a:hover,
+a.menu-trigger:hover,
+#jPanelMenu-menu li a:hover,
+.search-container button,
+.upload-btn,
+button,
+input[type="button"],
+input[type="submit"],
+a.button,
+.upload-btn:hover,
+#titlebar.photo-bg a.button.white:hover,
+a.button.dark:hover,
+#backtotop a:hover,
+.mfp-close:hover,
+.tabs-nav li.active a,
+.ui-accordion .ui-accordion-header-active:hover,
+.ui-accordion .ui-accordion-header-active,
+.highlight.color,
+.hover-icon,
+.comment-by a.reply:hover,
+.chosen-container .chosen-results li.highlighted,
+.chosen-container-multi .chosen-choices li.search-choice,
+.list-search button,
+.checkboxes input[type=checkbox]:checked + label:before 
+{ background-color: #58ba2b; }
+
+
+
+a,
+table td.title a:hover,
+table.manage-table td.action a:hover,
+#breadcrumbs ul li a:hover,
+#titlebar span.icons a:hover,
+.counter-box i,
+.counter,
+#popular-categories li a i,
+.list-1 li:before,
+.dropcap,
+.resume-titlebar span a:hover i,
+.resumes-list-content h4,
+.job-overview ul li i,
+.company-info span a:hover,
+.infobox a:hover,
+.meta-tags span a:hover,
+.widget-text h5 a:hover,
+.app-content .info span ,
+.app-content .info ul li a:hover
+{ color: #58ba2b; }
+
+
+
+
+
+
+#popular-categories li a:before {
+	-webkit-box-shadow: 0px 0px 0px 1px #85d361;
+	-moz-box-shadow: 0px 0px 0px 1px #85d361;
+	box-shadow: 0px 0px 0px 1px #85d361;
+}
+
+
+#popular-categories li a:hover { background-color: #f9fff6; }

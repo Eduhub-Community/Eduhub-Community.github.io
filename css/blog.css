@@ -1,0 +1,231 @@
+:root{
+    --Playfair: "Open Sans", sans-serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+}
+body{
+    line-height: 1.4;
+    color: var(--dark);
+}
+img{
+    height: 300px;
+    width: 100%;
+    display: block;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+/* header */
+header{
+    min-height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/blog/hero.jpg) center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.2rem;
+}
+
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: center;
+}
+
+.button{
+    font-size: 1.1rem;
+    background: #0EB493;
+    border-color: #0EB493;
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    border-radius: 0.25rem;
+    transition: all 0.5s ease;  
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #08493c;
+    background: #108870;
+}
+
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.banner-title{
+    font-size: 3rem;
+    font-family: var(--Playfair);
+    line-height: 1.2;
+}
+.banner-title span{
+    font-family: var(--Playfair);
+    color: var(--exDark);
+}
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 2px;
+}
+
+.title{
+    text-align: center;
+}
+
+.title h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* blog */
+.blog{
+    background: #f9f9f9;
+    padding: 4.5rem 0;
+}
+.blog-content{
+    margin: 2rem 0;
+    
+}
+.blog-item{
+    box-sizing: border-box;
+    box-shadow:0 3px 10px rgb(0 0 0 / 0.2) !important;
+}
+.blog-img{
+    position: relative;
+}
+.blog-img span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--exDark);
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+}
+.blog-img:hover{
+    opacity:0.8 !important;
+}
+.blog-text{
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+.blog-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+.blog-text h2{
+    font-family: var(--Playfair);
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+.blog-text p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+}
+.blog-text a{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--dark);
+    display: inline-block;
+    background: #0EB493;
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease;
+    margin-bottom:15px;
+}
+.blog-text a:hover{
+    background: var(--exDark);
+    transition: 0.8 ease-in-out;
+    width:350px;
+    text-align:center;
+}
+
+/* about */
+.about{
+    padding: 4.5rem 0;
+}
+.about-text{
+    margin: 2rem 0;
+}
+.about-text > p{
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+    opacity: 0.8;
+}
+
+/* Media Queries */
+@media screen and (min-width: 540px){
+    .banner-title{
+        font-size: 5rem;
+    }
+    .banner form{
+        margin-top: 1.4rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search-input{
+        padding: 0.8rem 0;
+    }
+    .design-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .design-item{
+        margin: 0;
+    }
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .blog-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .design-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
