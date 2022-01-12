@@ -937,6 +937,7 @@
         ==================================== -->
 
 
+	
 	<!--
         Contact Us
         ==================================== -->
@@ -1082,7 +1083,6 @@
 			</div>
 		</div>
 	</footer>
-<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/b98a01b5749b8eede023a8768/7e7e5e46ecf976122422387ae.js");</script>
 
 	<a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
 
@@ -1116,6 +1116,14 @@
 	<script src="js/jquery.easing.min.js"></script>
 	<!-- jquery easing -->
 	<script src="js/wow.min.js"></script>
+
+	<!-- emailjs cdn -->
+	<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+	<!-- emailjs cdn -->
+
 	<script>
 		var wow = new WOW({
 			boxClass: 'wow', // animated element css class (default is wow)
@@ -1163,20 +1171,25 @@
 					}
 				},
 				submitHandler: function (form) {
-					$(form).ajaxSubmit({
-						type: "POST",
-						data: $(form).serialize(),
-						url: "contact.php",
-						success: function () {
-							$('#contact-form :input').attr('disabled', 'disabled');
-							$('#contact-form').html("<span id='success' class='text-success'>Thanks for contacting us! We will be in touch with you shortly.</span>");
-						},
-						error: function () {
-							$('#contact-form').fadeTo("slow", 0.15, function () {
-								$('#error').fadeIn();
-							});
-						}
-					});
+					// <!-- emailjs to mail contact form data -->
+                    $(form).submit(function(e) {
+                        emailjs.init("PASTE YOUR USER ID HERE");
+                        
+                        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
+                        .then(function(response) {
+                            //    console.log('SUCCESS!', response.status, response.text);
+	                		$('#contact-form :input').attr('disabled', 'disabled');
+	                	    $(form).html("<span id='success' class='text-success'>Thanks for contacting us! We will be in touch with you shortly.</span>");
+                            document.getElementById("contact-form").reset();
+                            // alert("Form Submitted Successfully");
+                        }, function(error) {
+                            $(form).fadeTo("slow", 0.15, function () {
+	                			$('#error').fadeIn();
+	                		});
+                        });
+                        e.preventDefault();
+                    });
+                    // <!-- emailjs to mail contact form data -->
 				}
 			});
 		});
