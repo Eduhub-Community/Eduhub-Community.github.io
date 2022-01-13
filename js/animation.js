@@ -1,4 +1,4 @@
-const qoute1 = "The more that you read, the more things you will know, the more that you learn, the more places you’ll go." ;
+
 const qoute2 = "Education is what remains after one has forgotten what one has learned in school.";
 let index1 = 0;
 let index2 = 0;
