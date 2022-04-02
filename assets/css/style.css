@@ -13,6 +13,7 @@ body {
   color: #444444;
 }
 #blinking {
+  margin-top:10px;
             height: 50px;
             width: 170px;
             border-radius: 30px;
