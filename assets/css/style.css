@@ -12,7 +12,48 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
+#blinking {
+            height: 50px;
+            width: 170px;
+            border-radius: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #2d405f;
+            animation: blinkButton 1s infinite;
+            background-color: white;
+        }
 
+        @keyframes blinkButton {
+            0% {
+                opacity: 0.1;
+            }
+
+            50% {
+                opacity: 1;
+                box-shadow: 1px 0px 30px #2d405f;
+            }
+
+            100% {
+                opacity: 0.1;
+            }
+
+        }
+
+
+        @keyframes blinkText {
+            0% {
+                opacity: 0.1;
+            }
+
+            50% {
+                opacity: 1;
+                text-shadow: 1px 0px 30px #2d405f;
+            }
+
+            100% {
+                opacity: 0.1;
+            }
+        }
 a {
   color: #3b4ef8;
   text-decoration: none;
