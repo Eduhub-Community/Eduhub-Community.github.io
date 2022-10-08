@@ -105,6 +105,4 @@ or
     </td>
    </table>
    
-## Our valuable Contributors👩‍💻👨‍💻 :
 
-Hurray! You successfully made a contribution!
