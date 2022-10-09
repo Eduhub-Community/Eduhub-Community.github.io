@@ -27,6 +27,10 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet" />
+
+  <!-- Dask Mode CSS Files -->
+  <link href="assets/css/dark-mode-style.css" rel="stylesheet"/>
+  <link href='https://css.gg/dark-mode.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -50,6 +54,9 @@
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li>
             <a class="getstarted scrollto" href="#upcoming-events">Explore</a>
+          </li>
+          <li>
+            <button onclick="myFunction()" class="dark-mode-button"><i class="gg-dark-mode"></i></button>
           </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -1379,5 +1386,10 @@ Platform - Youtube
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 </body>
-
+<script>
+  function myFunction() {
+     var element = document.body;
+     element.classList.toggle("dark-mode");
+  }
+  </script> 
 </html>
