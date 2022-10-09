@@ -1,0 +1,24 @@
+.gallery-menu{
+	text-align:center;
+}
+.gallery-menu button{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+.gallery-item {
+	width:100%;
+}
+.gallery-item .item{
+	/*width:303px;*/
+	float:left;
+	margin-bottom:10px;
+}
