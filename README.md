@@ -102,6 +102,13 @@ or
             <br />
             <sub style="font-size:14px"><b>Priyanshu Mundra</b></sub>
         </a>
+        </td>
+        <td align="center" style="word-wrap: break-word; width: 200.0; height: 200.0">
+        <a href=https://github.com/neha030>
+           <img src="https://avatars.githubusercontent.com/u/72595335?v=4" width=250px height=295px />
+            <br />
+            <sub style="font-size:14px"><b>Neha Jha</b></sub>
+        </a>  
     </td>
    </table>
    
