@@ -82,7 +82,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #3b4ef8;
+  background: #b1b8f0;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -90,6 +90,7 @@ h6 {
 }
 .back-to-top i {
   font-size: 28px;
+  color:#111;
   /* color: #fff;*/
   line-height: 0;
 }
@@ -307,9 +308,9 @@ h6 {
   line-height: 0;
   transition: 0.5s;
 }
-.mobile-nav-toggle.bi-x {
-  /* color: #fff;*/
-}
+/* .mobile-nav-toggle.bi-x { */
+  /* color: #fff; */
+/* } */
 
 @media (max-width: 991px) {
   .mobile-nav-toggle {
@@ -429,6 +430,7 @@ h6 {
   display: block;
   padding: 8px 32px 10px 32px;
   margin-top: 25px;
+  margin-bottom: 25px;
   border-radius: 5px;
   transition: 0.5s;
   color: #fff;
@@ -968,10 +970,10 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.team {
+/* .team { */
   /* background: #fff; */
   /* padding: 35px 7rem; */
-}
+/* } */
 
 .founder-img {
   width: 13rem;
@@ -1042,9 +1044,10 @@ section {
   margin: 0 10px;
   display: inline-block;
 }
-.team .member .social a:hover {
+/* .team .member .social a:hover { */
   /* color: #fff;*/
-}
+/* } */
+
 .team .member .social i {
   font-size: 18px;
   margin: 0 2px;
@@ -1201,9 +1204,9 @@ section {
 .faq .faq-list .icon-show {
   display: none;
 }
-.faq .faq-list .collapsed {
+/* .faq .faq-list .collapsed { */
   /* color: black; */
-}
+/* } */
 .faq .faq-list .collapsed:hover {
   color: #3b4ef8;
 }
@@ -1486,7 +1489,8 @@ section {
   transition: 0.3s;
 }
 #footer .social-links a:hover {
-  background: #3b4ef8;
+  background: #a7aeed;
+  /* background: #ebeda7; */
   /* color: #fff;*/
   text-decoration: none;
 }
