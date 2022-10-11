@@ -28,9 +28,21 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Dask Mode CSS Files -->
+  <!-- Dark Mode CSS Files -->
   <link href="assets/css/dark-mode-style.css" rel="stylesheet"/>
   <link href='https://css.gg/dark-mode.css' rel='stylesheet'>
+
+  <!-- Script that connect to the email Api -->
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init("D2jKnHPqRwZkN7ri3");
+})();
+</script>
+  <!-- Script that connect to the email Api ends HERE -->
+
 </head>
 
 <body>
@@ -1242,7 +1254,7 @@ Platform - Youtube
           </div>
 
           <div class="col-lg-6 mt-4 mt-md-0">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="javaScript:SendMail()" role="form" class="javascript-email-form" name="contact-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
@@ -1255,13 +1267,10 @@ Platform - Youtube
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required />
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  Your message has been sent. Thank you!
+               <div class="my-3">
+                <div name="sent_message" class="" id="sent_message">
                 </div>
               </div>
               <div class="text-center">
@@ -1372,8 +1381,8 @@ Platform - Youtube
   <!-- End Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short" ></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
@@ -1382,6 +1391,7 @@ Platform - Youtube
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
