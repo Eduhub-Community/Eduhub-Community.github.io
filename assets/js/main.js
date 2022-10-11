@@ -244,3 +244,23 @@
   });
 
 })()
+
+/*
+Function that sends the email to eduuhub
+*/
+function SendMail() {
+  const Data = '{"service" : "service_t4spjxu", "template" : "template_voik16d"}';
+  const Object = JSON.parse(Data);
+	var params = {
+		from_name: document.forms["contact-form"]["name"].value,
+		from_email: document.forms["contact-form"]["email"].value,
+		subject_tittle: document.forms["contact-form"]["subject"].value,
+		message: document.forms["contact-form"]["message"].value,
+	}
+	 emailjs.send(Object.service, Object.template, params).then(function (res) {
+    var element = document.getElementById('sent_message');
+    element.innerHTML = "Your message has been sent. Thank you!";
+    element.classList.add("alert");
+    element.classList.add("alert-success");
+	})
+}
