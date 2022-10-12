@@ -27,10 +27,105 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <!-- Dark Mode CSS Files -->
   <link href="assets/css/dark-mode-style.css" rel="stylesheet"/>
   <link href='https://css.gg/dark-mode.css' rel='stylesheet'>
+ <style>
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+
+}
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+a{
+  color: black;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: #2267C3;
+}
+.wrapper .button:nth-child(5):hover .icon{
+  background: #ff0000;
+}
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #333;
+}
+.wrapper .button:nth-child(5) span{
+  color: #ff0000;
+}
+ </style>
 </head>
 
 <body>
@@ -1352,22 +1447,40 @@ Platform - Youtube
         </div>
       </div>
     </div>
-
-    <div class="container d-md-flex py-4">
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
-        <a target="_blank" href="https://www.facebook.com/eduhubcommunity" class="facebook"><i
-            class="bx bxl-facebook"></i></a>
-        <a target="_blank" href="https://www.instagram.com/eduhub_community/" class="instagram"><i
-            class="bx bxl-instagram"></i></a>
-        <a target="_blank" href="https://www.youtube.com/channel/UCPpG3qqMH_0QDvSzHyjjZJQ" class="google-plus"><i
-            class="bx bxl-youtube"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/company/eduhub-community" class="linkedin"><i
-            class="bx bxl-linkedin"></i></a>
-        <a target="_blank" href="https://twitter.com/CommunityEduhub" class="twitter"><i
-            class="bx bxl-twitter"></i></a>
+    <div class="wrapper">
+      <div class="button">
+         <div class="icon">
+          <a target="_blank" href="https://www.facebook.com/eduhubcommunity" class="facebook"> <i class="fab fa-facebook-f"></i></a>
+         </div>
+         <span>Facebook</span>
       </div>
-    </div>
+      <div class="button">
+         <div class="icon">
+          <a target="_blank" href="https://www.instagram.com/eduhub_community/" class="instagram"> <i class="fab fa-twitter"></i>
+          </a>       </div>
+         <span>Twitter</span>
+      </div>
+      <div class="button">
+         <div class="icon">
+          <a target="_blank" href="https://www.instagram.com/eduhub_community/" class="instagram"> <i class="fab fa-instagram"></i>
+          </a>      </div>
+         <span>Instagram</span>
+      </div>
+      <div class="button">
+         <div class="icon">
+          <a target="_blank" href="https://www.linkedin.com/company/eduhub-community" class="linkedin"> <i class="fab fa-linkedin"></i>
+          </a></div>
+         <span>Codepen</span>
+      </div>
+      <div class="button">
+         <div class="icon">
+          <a target="_blank" href="https://www.instagram.com/eduhub_community/" class="instagram"> <i class="fab fa-youtube"></i>
+          </a>  </div>
+         <span>YouTube</span>
+      </div>
+   </div>
+
+    
   </footer>
   <!-- End Footer -->
 
