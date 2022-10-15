@@ -1,0 +1,13 @@
+.dark-mode {
+  background-color: black;
+  color: #000;
+}
+body {
+  background-color: white;
+  /* color: black; */
+}
+.dark-mode-button {
+  padding-left: 20px;
+  border: none;
+  background: none;
+}
