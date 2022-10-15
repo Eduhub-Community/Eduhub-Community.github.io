@@ -401,7 +401,7 @@ emailjs.init("D2jKnHPqRwZkN7ri3");
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
             data-aos-delay="100">
-            <div class="icon-box">
+            <div class="icon-box dark">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
               <h4 class="title"><a href="">Internship opportunity</a></h4>
               <p class="description">
@@ -416,7 +416,7 @@ emailjs.init("D2jKnHPqRwZkN7ri3");
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
             data-aos-delay="200">
-            <div class="icon-box">
+            <div class="icon-box dark">
               <div class="icon"><i class="bx bx-file"></i></div>
               <h4 class="title"><a href="https://eduhubcommunity.tech/Campus-Leader-Page/">Campus Leaders</a></h4>
               <p class="description">
@@ -432,7 +432,7 @@ emailjs.init("D2jKnHPqRwZkN7ri3");
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
             data-aos-delay="300">
-            <div class="icon-box">
+            <div class="icon-box dark">
               <div class="icon"><i class="bx bx-tachometer"></i></div>
               <h4 class="title"><a href="">Hackathons/Workshops</a></h4>
               <p class="description">
@@ -446,7 +446,7 @@ emailjs.init("D2jKnHPqRwZkN7ri3");
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
             data-aos-delay="400">
-            <div class="icon-box">
+            <div class="icon-box dark">
               <div class="icon"><i class="bx bx-layer"></i></div>
               <h4 class="title"><a href="https://eduhubcommunity.tech/Campus-Leader-Page/">Chapter Lead</a></h4>
               <p class="description">
@@ -579,7 +579,7 @@ Platform - Youtube
     </section>    
 
     </section>
-    <!-- =======End Upcoming Events Section ======= --> -->
+    <!-- =======End Upcoming Events Section ======= --> 
 
     <!-- ======= Events Section ======= -->
     <section id="event" class="event">
@@ -908,7 +908,7 @@ Platform - Youtube
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="testimonial-item">
+              <div class="testimonial-item dark">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   Eduhub Community is a child for me building this community helps me a lot to grow in my community journey, networking with various community leads many more stuffs :)
@@ -922,7 +922,7 @@ Platform - Youtube
             <!-- End testimonial item -->
 
             <div class="swiper-slide">
-              <div class="testimonial-item">
+              <div class="testimonial-item dark">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   I have learn a lot in the journey, i develop my communication skill as well as my management skill, its an amazing experience.
@@ -936,7 +936,7 @@ Platform - Youtube
             <!-- End testimonial item -->
 
             <div class="swiper-slide">
-              <div class="testimonial-item">
+              <div class="testimonial-item dark">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   "Eduhub Community" is FILLING THE GAP which was meant to be filled by the professors of the same
@@ -951,7 +951,7 @@ Platform - Youtube
             <!-- End testimonial item -->
 
             <div class="swiper-slide">
-              <div class="testimonial-item">
+              <div class="testimonial-item dark">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   It was an amazing experience with Eduhub they will clear your each and every doubt, and the content
@@ -1228,14 +1228,14 @@ Platform - Youtube
           <div class="col-lg-6">
             <div class="row">
               <div class="col-md-12">
-                <div class="info-box">
+                <div class="info-box dark">
                   <i class="bx bx-map"></i>
                   <h3>Our Address</h3>
                   <p>Chomu Udaipuria Mod, Jaipur, Rajasthan</p>
                 </div>
               </div>
               <div class="col-md-12">
-                <div class="info-box mt-4">
+                <div class="info-box dark mt-4">
                   <i class="bx bx-envelope"></i>
                   <h3>Email Us</h3>
                   <p>
@@ -1254,7 +1254,7 @@ Platform - Youtube
           </div>
 
           <div class="col-lg-6 mt-4 mt-md-0">
-            <form action="javaScript:SendMail()" role="form" class="javascript-email-form" name="contact-form">
+            <form action="javaScript:SendMail()" role="form" class="javascript-email-form dark" name="contact-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
@@ -1398,8 +1398,12 @@ Platform - Youtube
 </body>
 <script>
   function myFunction() {
+    let cards = document.querySelectorAll(".dark");
      var element = document.body;
      element.classList.toggle("dark-mode");
+     cards.forEach(card=>{
+      card.classList.toggle('dark-card')
+     })
   }
   </script> 
 </html>

@@ -90,7 +90,7 @@ h6 {
 }
 .back-to-top i {
   font-size: 28px;
-  color:#111;
+  color: #111;
   /* color: #fff;*/
   line-height: 0;
 }
@@ -238,7 +238,7 @@ h6 {
 }
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-  /* color: #fff;*/
+  color: #fff;
   background: #3b4ef8;
 }
 .navbar .dropdown ul {
@@ -309,7 +309,7 @@ h6 {
   transition: 0.5s;
 }
 /* .mobile-nav-toggle.bi-x { */
-  /* color: #fff; */
+/* color: #fff; */
 /* } */
 
 @media (max-width: 991px) {
@@ -971,8 +971,8 @@ section {
 # Team
 --------------------------------------------------------------*/
 /* .team { */
-  /* background: #fff; */
-  /* padding: 35px 7rem; */
+/* background: #fff; */
+/* padding: 35px 7rem; */
 /* } */
 
 .founder-img {
@@ -1045,7 +1045,7 @@ section {
   display: inline-block;
 }
 /* .team .member .social a:hover { */
-  /* color: #fff;*/
+/* color: #fff;*/
 /* } */
 
 .team .member .social i {
@@ -1205,7 +1205,7 @@ section {
   display: none;
 }
 /* .faq .faq-list .collapsed { */
-  /* color: black; */
+/* color: black; */
 /* } */
 .faq .faq-list .collapsed:hover {
   color: #3b4ef8;
