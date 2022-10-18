@@ -721,6 +721,7 @@ section {
 .services .description {
   font-size: 15px;
   line-height: 28px;
+  color: #000000;
   margin-bottom: 0;
 }
 
@@ -951,6 +952,7 @@ section {
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 auto 15px auto;
+  color: #000000;
 }
 .testimonials .swiper-pagination {
   margin-top: 20px;
