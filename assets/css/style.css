@@ -238,7 +238,7 @@ h6 {
 }
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-  /* color: #fff;*/
+  color: #fff;
   background: #3b4ef8;
 }
 .navbar .dropdown ul {
