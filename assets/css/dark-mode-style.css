@@ -15,7 +15,7 @@ body {
   background-color: #181818 !important;
   color: white !important;
 }
-.dark-card h3, p {
+.dark-card h3,.dark-card p {
   color: white !important;
 }
 .section-bg {
