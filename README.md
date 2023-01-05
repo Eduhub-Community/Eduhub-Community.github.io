@@ -16,9 +16,9 @@
 <a href="http://eduhubcommunity.tech/" target="_blank">Visit Our Website💻</a>
 </h2>
 
-## How to contribute
+# How to contribute
 
-1. # Start the Repository and then Fork the project
+1. Start the Repository and then Fork the project
 2. Make any changes in your forked repository
 3. On this repository, click `Pull Requests` and raise a `Pull Request` selecting your fork on the right drop down
 
