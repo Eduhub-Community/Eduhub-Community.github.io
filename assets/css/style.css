@@ -59,9 +59,18 @@ a {
 }
 
 a:hover {
-  color: #6c7afa;
+  color: #ffffff;
   text-decoration: none;
 }
+botton{
+ font-size:24px; 
+  font-weight:bolder; 
+  border-radius:5px; 
+  border:1px solid red;
+  background-color: red;"
+}
+
+
 
 h1,
 h2,
