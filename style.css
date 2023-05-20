@@ -795,10 +795,11 @@ section {
   justify-content: flex-end;
   align-items: flex-start;
   padding: 10px;
+  background-color: rgba(0,0,0,0.6);
 }
 .event .event-wrap .event-info h4 {
   font-size: 20px;
-  /* color: #fff;*/
+   color:#FFFFFF;
   font-weight: 600;
 }
 .event .event-wrap .event-info p {
@@ -807,6 +808,7 @@ section {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  text-align: justify;
   font-style: italic;
 }
 .event .event-wrap .event-links {
