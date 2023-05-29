@@ -8,6 +8,26 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+/* Custom Scroll Bar*/
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 100vw;
+  background: transparent;
+  margin-block: 0.4em;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 0.21em solid transparent;
+  border-radius: 100px;
+  background-color: #466393;
+  background-clip: content-box;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
