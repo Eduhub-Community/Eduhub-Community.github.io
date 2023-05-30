@@ -67,7 +67,7 @@
 .container-sm {
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, .75rem);
   margin-right: auto;
   margin-left: auto;
 }
@@ -105,6 +105,7 @@
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
+  padding-left: 2rem;
 }
 .row > * {
   box-sizing: border-box;
@@ -117,6 +118,7 @@
 }
 
 .col {
+  padding-left: 1rem;
   flex: 1 0 0%;
 }
 
