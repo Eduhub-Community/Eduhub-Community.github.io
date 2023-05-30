@@ -1,0 +1,26 @@
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+body {
+  background-color: white;
+  /* color: black; */
+}
+.dark-mode-button {
+  padding-left: 20px;
+  border: none;
+  background: none;
+}
+.dark-card {
+  background-color: #181818 !important;
+  color: white !important;
+}
+.dark-card h3,.dark-card p {
+  color: white !important;
+}
+.section-bg {
+  background-color: #2d405f !important;
+}
+.section-bg h2 {
+  color: #fff !important;
+}
