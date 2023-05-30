@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #ffffff;
 }
 #blinking {
   margin-top: 10px;
@@ -19,7 +19,7 @@ body {
   border-radius: 30px;
   font-size: 20px;
   font-weight: bold;
-  color: #2d405f;
+  color: #ffffff;
   animation: blinkButton 1s infinite;
   /* background-color: white; */
 }
@@ -176,7 +176,7 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 #header .logo a {
-  color: #2d405f;
+  color: #ffff;
 }
 #header .logo img {
   max-height: 50px;
@@ -1001,7 +1001,7 @@ section {
   text-align: center;
   margin-inline: auto;
   margin-bottom: 20px;
-  /* background: #343a40; */
+  /* background: #fff; */
   position: relative;
   overflow: hidden;
 }
@@ -1021,19 +1021,19 @@ section {
   right: 0;
   bottom: 10px;
   transition: bottom 0.4s;
-  color: #fff;
+  /* color: #fff; */
 }
 .team .member .member-info-content h4 {
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 18px;
-  /* color: #fff;*/
+   color: #fff;
 }
 .team .member .member-info-content span {
   font-style: italic;
   display: block;
   font-size: 13px;
-  /* color: #fff;*/
+  /* color: #fff;  */
 }
 .team .member .social {
   position: absolute;
