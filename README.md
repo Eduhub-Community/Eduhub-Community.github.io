@@ -4,7 +4,7 @@
  Our vision is to create an environment where people can learn and apply technical knowledge together.
  Our mission is to build a strong technical community which is open-minded and has an intense desire for consistent learning from one another in the community. We have been conducting and organizing numerous Open Source Programs, Hackathons, Meetups, Conferences and 1:1 Mentorships.
 
-### An Open Source Website built using HTML, CSS, JavaScript and Bootstrap Php 
+### An Open Source project Website built using HTML, CSS, JavaScript and Bootstrap Php 
 
 ![image](https://eduhubcommunity.tech/assets/img/Eduhub%20Logo%20(2).png)
 
