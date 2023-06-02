@@ -988,6 +988,9 @@ section {
   right: 0;
   transition: 0.2s;
 }
+.team .member .member-info:hover{
+  color: #fff;
+}
 .team .member .member-info-content {
   position: absolute;
   left: 0;
@@ -1007,6 +1010,9 @@ section {
   font-size: 13px;
   /* color: #fff;*/
 }
+
+
+
 .team .member .social {
   position: absolute;
   left: 0;
@@ -1017,14 +1023,15 @@ section {
   text-align: center;
 }
 .team .member .social a {
-  transition: color 0.3s;
+  transition: all 0.3s;
   color: rgba(255, 255, 255, 0.7);
   margin: 0 10px;
   display: inline-block;
 }
-/* .team .member .social a:hover { */
-  /* color: #fff;*/
-/* } */
+.team .member .social a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
 
 .team .member .social i {
   font-size: 18px;
