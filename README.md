@@ -1,10 +1,14 @@
-<h1 align="center">Eduhub Community Website </h1>
-<h4 align="center"> It’s a community for the people by the people. The vision of the community is to build an environment where people can learn together and implement together., We Organizes Open Source Programs, Hackathons and 1:1 Mentorships. </h4>
-<h3 align="center"> An Open Source Website for Eduhub Community built using HTML, CSS, JavaScript and Bootstrap Php </h3>
 
-![image](https://res.cloudinary.com/practicaldev/image/fetch/s--u9O3bUqe--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/12t9r8j7n9ynxbdzhs5p.png)
+## welcome to the official GitHub repository of Eduhub Community Website
+ Eduhub is a community of the people, for the people and by the people. 
+ Our vision is to create an environment where people can learn and apply technical knowledge together.
+ Our mission is to build a strong technical community which is open-minded and has an intense desire for consistent learning from one another in the community. We have been conducting and organizing numerous Open Source Programs, Hackathons, Meetups, Conferences and 1:1 Mentorships.
 
-<h1 align="center">HacktoberFest Accepted </h1>
+### An Open Source project Website built using HTML, CSS, JavaScript and Bootstrap Php 
+
+![image](https://eduhubcommunity.tech/assets/img/Eduhub%20Logo%20(2).png)
+
+<h1 align="center">GSSOC'23 Accepted </h1>
 <br>
 <p align="center">
 <b><a href="https://discord.com/invite/b3ZJfH9eeN" target="_blank">
@@ -17,10 +21,14 @@
 </h2>
 
 ## How to contribute
-
-1. # Start the Repository and then Fork the project
-2. Make any changes in your forked repository
-3. On this repository, click `Pull Requests` and raise a `Pull Request` selecting your fork on the right drop down
+## Contributing
+1. Fork it
+2. Create your feature branch `(git checkout -b my-new-feature)`
+3. Commit your changes `(git commit -m 'Add some feature')`
+4. In case of multiple commits squash them. You can find guide here
+4. Run the tests with Go Live and make sure all tests are passed.
+5. Push your branch `(git push origin my-new-feature)`
+6. Create a new Pull Request, following the template
 
 Questions can be asked by raising an `Issue`.
 
@@ -33,13 +41,13 @@ Questions can be asked by raising an `Issue`.
 - Using git on your local machine. Do this to download the forked copy of this repository to your computer
 
 ```
-  git clone https://github.com/yourGithubUsername/Hacktoberfest_Practice_Contribution
+  git clone https://github.com/USERNAME/Eduhub-Community.github.io/
 ```
 
 - switch to the cloned folder. This can be done with Gitbash or the integrated terminal in the VSCode editor
 
 ```
-  cd Hacktoberfest_Practice_Contribution
+  cd Eduhub-Community.github.io
 ```
 
 - Make a new branch. Your name would make a good branch because it's unique!
@@ -49,12 +57,6 @@ Questions can be asked by raising an `Issue`.
 ```
 
 - Stage your changes
-
-```
-  git add index.html
-```
-
-or
 
 ```
   git add .
@@ -92,22 +94,22 @@ or
 
 - Wait for your changes to be merged
 
-## Maintainers (Our Team for HacktoberFest)
+## Maintainers (Our Team for GSSOC'23)
 
 <table>
 <tr>
-    <td align="center" style="word-wrap: break-word; width: 200.0; height: 200.0">
-        <a href=https://github.com/Spyder15>
-            <img src=https://user-images.githubusercontent.com/97145602/194700119-a87642ce-505f-43dc-92fe-26b6ac632e8b.jpeg>
-            <br />
-            <sub style="font-size:14px"><b>Priyanshu Mundra</b></sub>
+    <td align="center" style="word-wrap: break-word; width: 50; height: 50">
+        <a href=https://github.com/souvikg544/>
+            <img src="https://media.licdn.com/dms/image/D4D03AQH61lX3UvuDSg/profile-displayphoto-shrink_800_800/0/1679553457608?e=1691020800&v=beta&t=Bw9dKc2LSy60Au_G5Uhbf7BRGzF5bFJNVF54vb0mYV8" width=250px height=295px
+                 <br />
+            <sub style="font-size:14px"><b>SOUVIK GHOSH</b></sub>
         </a>
         </td>
         <td align="center" style="word-wrap: break-word; width: 200.0; height: 200.0">
-        <a href=https://github.com/neha030>
-           <img src="https://avatars.githubusercontent.com/u/72595335?v=4" width=250px height=295px />
+        <a href=https://github.com/AshAman999>
+           <img src="https://media.licdn.com/dms/image/C4E03AQE6p0QwBpHLOQ/profile-displayphoto-shrink_800_800/0/1642423321172?e=1691020800&v=beta&t=hgsBqad04ucYxrEq7AkVfyJwRmbJCgFzguNCOwDwBTA" width=250px height=295px />
             <br />
-            <sub style="font-size:14px"><b>Neha Jha</b></sub>
+            <sub style="font-size:14px"><b>Aman Raj</b></sub>
         </a>  
     </td>
    </table>
