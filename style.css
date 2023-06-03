@@ -673,6 +673,7 @@ section {
 --------------------------------------------------------------*/
 .services {
   background: #2d405f;
+  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
   padding-bottom: 80px;
 }
 .services .section-title h2,
@@ -682,8 +683,8 @@ section {
 .services .section-title h2::after {
   background: rgba(255, 255, 255, 0.2);
 }
-.services .icon-box {
-  padding: 50px 30px;
+ .icon-box {
+   padding: 50px 30px;
   position: relative;
   overflow: hidden;
   background: #fff;
@@ -693,6 +694,7 @@ section {
 }
 .services .icon-box:hover {
   transform: scale(1.08);
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 }
 .services .icon {
   margin-bottom: 15px;
@@ -723,7 +725,6 @@ section {
   line-height: 28px;
   margin-bottom: 0;
 }
-
 /*--------------------------------------------------------------
 # Events
 --------------------------------------------------------------*/

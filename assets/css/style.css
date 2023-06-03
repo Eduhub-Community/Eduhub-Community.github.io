@@ -671,6 +671,13 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.column{
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+  background-image: linear-gradient(to right, #141e30, #243b55);
+}
+.column:hover{
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
 .services {
   background: #2d405f;
   padding-bottom: 80px;
@@ -687,14 +694,22 @@ section {
   position: relative;
   overflow: hidden;
   background: #fff;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
   border-radius: 5px;
   text-align: center;
+  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px; */
+  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+
 }
 .services .icon-box:hover {
-  transform: scale(1.08);
+  transform: scale(0.9);
+  /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .services .icon {
+  
   margin-bottom: 15px;
 }
 .services .icon i {
@@ -702,24 +717,31 @@ section {
   line-height: 1;
   color: #2d405f;
   background: #eff2f8;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
   padding: 20px;
+  margin-bottom: 10px;
+  margin-top: -20px;
   border-radius: 50px;
   transition: all 0.3s;
 }
 .services .title {
   font-weight: 700;
   margin-bottom: 15px;
+  
   font-size: 18px;
 }
 .services .title a {
-  color: #2d405f;
+  color: #1550ae;
   transition: 0.3s;
+  font-weight: bold;
 }
 .services .title a:hover {
-  color: #4e6fa4;
+  color: #022358;
+
 }
 .services .description {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 28px;
   color: #000000;
   margin-bottom: 0;
