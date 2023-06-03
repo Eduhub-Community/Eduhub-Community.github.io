@@ -8,6 +8,26 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+/* Custom Scroll Bar*/
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 100vw;
+  background: transparent;
+  margin-block: 0.4em;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 0.21em solid transparent;
+  border-radius: 100px;
+  background-color: #466393;
+  background-clip: content-box;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -103,51 +123,6 @@ h6 {
   opacity: 1;
 }
 
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background: #fff;
-}
-
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #3b4ef8;
-  border-top-color: #e2e5fe;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -538,6 +513,7 @@ section {
   padding: 6px 30px 8px 30px;
   color: #fff;
   border-radius: 50px;
+  border: solid 1px;
   transition: 0.3s;
 }
 .about .content .about-btn i {
@@ -1351,6 +1327,7 @@ section {
   /* color: #fff;*/
   transition: 0.4s;
   border-radius: 5px;
+  color: white;
 }
 .contact .javascript-email-form button[type="submit"]:hover {
   background: #0a22f6;
@@ -1407,7 +1384,7 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 #footer .footer-top {
-  padding: 60px 0 30px 0;
+  padding: 20px 0 10px 0;
   /* background: #fff; */
 }
 #footer .footer-top .footer-contact {
@@ -1415,7 +1392,7 @@ section {
 }
 #footer .footer-top .footer-contact h4 {
   font-size: 22px;
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
   font-weight: 700;
@@ -1436,7 +1413,7 @@ section {
   padding-bottom: 12px;
 }
 #footer .footer-top .footer-links {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 #footer .footer-top .footer-links ul {
   list-style: none;
@@ -1505,6 +1482,7 @@ section {
   transition: 0.3s;
   border-radius: 0 5px 5px 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  color: white;
 }
 #footer .footer-newsletter form input[type="submit"]:hover {
   background: #0a22f6;

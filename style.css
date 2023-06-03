@@ -238,7 +238,7 @@ h6 {
 }
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-  /* color: #fff;*/
+  color: #fff;
   background: #3b4ef8;
 }
 .navbar .dropdown ul {
@@ -671,9 +671,15 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.column{
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+  background-image: linear-gradient(to right, #141e30, #243b55);
+}
+.column:hover{
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
 .services {
   background: #2d405f;
-  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
   padding-bottom: 80px;
 }
 .services .section-title h2,
@@ -683,20 +689,27 @@ section {
 .services .section-title h2::after {
   background: rgba(255, 255, 255, 0.2);
 }
- .icon-box {
-   padding: 50px 30px;
+.services .icon-box {
+  padding: 50px 30px;
   position: relative;
   overflow: hidden;
   background: #fff;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
   border-radius: 5px;
   text-align: center;
+  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px; */
+  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+
 }
 .services .icon-box:hover {
-  transform: scale(1.08);
-  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+  transform: scale(0.9);
+  /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .services .icon {
+  
   margin-bottom: 15px;
 }
 .services .icon i {
@@ -704,30 +717,48 @@ section {
   line-height: 1;
   color: #2d405f;
   background: #eff2f8;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
   padding: 20px;
+  margin-bottom: 10px;
+  margin-top: -20px;
   border-radius: 50px;
   transition: all 0.3s;
 }
 .services .title {
   font-weight: 700;
   margin-bottom: 15px;
+  
   font-size: 18px;
 }
 .services .title a {
-  color: #2d405f;
+  color: #1550ae;
   transition: 0.3s;
+  font-weight: bold;
 }
 .services .title a:hover {
-  color: #4e6fa4;
+  color: #022358;
+
 }
 .services .description {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 28px;
+  color: #000000;
   margin-bottom: 0;
 }
+
 /*--------------------------------------------------------------
 # Events
 --------------------------------------------------------------*/
+.event .section-title h2{
+  text-align: center;
+  
+  font-size: 49px;
+  color: #1a58bc;
+}
+.event .section-title p{
+  font-size: 22px;
+}
 .event .event-item {
   margin-bottom: 30px;
   padding: 10px;
@@ -753,7 +784,6 @@ section {
 }
 .event #event-flters li:hover,
 .event #event-flters li.filter-active {
-  /* color: #fff;*/
   background: #3b4ef8;
 }
 .event #event-flters li:last-child {
@@ -764,8 +794,14 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  transition: all 2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   background: rgba(140, 155, 173, 0.6);
   border-radius: 10px;
+}
+.event .event-wrap :hover{
+  transform: scale3d(2);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .event .event-wrap::before {
   content: "";
@@ -777,7 +813,7 @@ section {
   bottom: 0;
   transition: all ease-in-out 0.3s;
   z-index: 2;
-  opacity: 0;
+  opacity: 0%;
 }
 .event .event-wrap img {
   transition: all ease-in-out 0.3s;
@@ -803,10 +839,12 @@ section {
   font-weight: 600;
 }
 .event .event-wrap .event-info p {
-  color: rgba(255, 255, 255, 0.7);
+  color: white;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   margin: 0;
   font-style: italic;
 }
@@ -952,6 +990,7 @@ section {
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 auto 15px auto;
+  color: #000000;
 }
 .testimonials .swiper-pagination {
   margin-top: 20px;
@@ -977,8 +1016,8 @@ section {
 /* } */
 
 .founder-img {
-  width: 100%;
-  border-radius: 20px;
+  width: 13rem;
+  border-radius: 10%;
 }
 
 .view-team {
@@ -996,11 +1035,7 @@ section {
   text-align: center;
 }
 .team .member {
-  cursor: pointer;
-  width: 100%;
-  max-width: 400px;
   text-align: center;
-  margin-inline: auto;
   margin-bottom: 20px;
   /* background: #343a40; */
   position: relative;
@@ -1014,7 +1049,6 @@ section {
   left: 0;
   right: 0;
   transition: 0.2s;
-  border-radius: 20px;
 }
 .team .member .member-info-content {
   position: absolute;
@@ -1022,7 +1056,6 @@ section {
   right: 0;
   bottom: 10px;
   transition: bottom 0.4s;
-  color: #fff;
 }
 .team .member .member-info-content h4 {
   font-weight: 700;
