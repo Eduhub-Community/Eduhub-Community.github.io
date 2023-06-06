@@ -1299,24 +1299,32 @@ my-branch-with-smol-changes
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
-                </div>
+              
+                <div class="spandiv"> <small class="small" id="nameerr"></small></div>
+              </div>
+
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
-                </div>
+               
+                <div class="spandiv"> <small class="small"  id="emailerr"></small></div>
+              </div>
+
               </div>
               <div class="form-group mt-3">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required />
               </div>
+              <div class="spandiv"> <small class="small"  id="subjecterr"></small></div>
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message"
                   required></textarea>
               </div>
+              <div class="spandiv"> <small class="small"  id="messageerr"></small></div>
               <div class="my-3">
                 <div name="sent_message" class="" id="sent_message">
                 </div>
               </div>
               <div class="text-center">
-                <button type="submit">Send Message</button>
+                <button type="submit" onclick="handleSubmit()">Send Message</button>
               </div>
             </form>
           </div>
@@ -1447,4 +1455,131 @@ my-branch-with-smol-changes
   }
 </script>
 
+
+<script>
+  
+ //console.log(form);
+
+function handleSubmit(){
+
+   if(checkInputs())
+   return true;
+   else
+   return false;
+
+ };
+
+ function checkInputs()
+ {
+       const username = document.getElementById('name');
+      const useremail = document.getElementById('email');
+      const subject = document.getElementById('subject');
+      const message = document.getElementById('message');
+
+      //get values from input fields
+      const emailval = useremail.value.trim();
+      const usernameval = username.value.trim();
+      const subjectval = subject.value.trim();
+      const messageval = message.value.trim();
+
+      if(usernameval === '')
+      {
+          username.classList.add('error');
+          username.classList.remove('success');
+
+          let error = document.getElementById('nameerr');
+          error.innerText = 'Please enter your name';
+      }else
+      {
+       console.log("correct");
+         username.classList.remove('error');
+         username.classList.add('success');
+         let error = document.getElementById('nameerr');
+         error.innerText = '';
+      }
+
+      if(emailval === '')
+      {
+         useremail.classList.add('error');
+          useremail.classList.remove('success');
+
+          let error = document.getElementById('emailerr');
+          error.innerText = 'Please enter your Email';
+      }
+      else if(!validateEmail(emailval))
+      {
+       useremail.classList.add('error');
+          useremail.classList.remove('success');
+
+          let error = document.getElementById('emailerr');
+          error.innerText = 'Please enter valid Email';
+      }
+      else
+      {
+        useremail.classList.remove('error');
+         useremail.classList.add('success');
+         let error = document.getElementById('emailerr');
+         error.innerText = '';
+      }
+      
+
+      if(subjectval === '')
+      {
+          subject.classList.add('error');
+          subject.classList.remove('success');
+
+          let error = document.getElementById('subjecterr');
+          error.innerText = 'Please enter subject';
+      }else
+      {
+         subject.classList.remove('error');
+         subject.classList.add('success');
+         let error = document.getElementById('subjecterr');
+         error.innerText = '';
+      }
+
+      if(messageval === '')
+      {
+          message.classList.add('error');
+          message.classList.remove('success');
+
+          let error = document.getElementById('messageerr');
+          error.innerText = 'Please enter your message';
+      }else
+      {
+         message.classList.remove('error');
+         message.classList.add('success');
+         let error = document.getElementById('messageerr');
+         error.innerText = '';
+      }
+
+
+      if(emailval !== '' && usernameval !== '' && subjectval !== '' && messageval !== '')
+      {
+       console.log("complete");
+       useremail.value='';
+       username.value='';
+       subject.value='';
+       message.value='';
+        
+      
+       username.classList.remove('success');
+       useremail.classList.remove('success');
+       subject.classList.remove('success');
+       message.classList.remove('success');
+
+       return true;
+      }
+     
+ }
+
+ function validateEmail(mail) 
+ {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+   {
+     return true;
+   }
+   return false;
+ }
+</script>
 </html>
