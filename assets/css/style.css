@@ -1334,6 +1334,29 @@ section {
 .contact .javascript-email-form button[type="submit"]:hover {
   background: #0a22f6;
 }
+
+.contact .javascript-email-form input.error
+{
+  border: 2px solid rgb(207, 1, 1);
+}
+.contact .javascript-email-form textarea.error
+{
+  border: 2px solid rgb(207, 1, 1);
+}
+.contact .javascript-email-form input.success
+{
+  border: 2px solid rgb(2, 146, 2);
+}
+.contact .javascript-email-form textarea.success
+{
+  border: 2px solid rgb(2, 146, 2);
+}
+.contact .javascript-email-form .spandiv
+{
+  color: red;
+  font-size: 16px;
+
+}
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);

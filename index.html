@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -412,7 +413,7 @@
     <section id="services" class="services">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2 style="font-size: 38px; ">Our Initiatives</h2>
+          <h2>Our Initiatives</h2>
           <p>
             We encourage people to share about their skills or any
             good work they do in their life so that many more
@@ -422,10 +423,9 @@
         </div>
 
         <div class="row">
-          <div   class=" column col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
-            data-aos-delay="100"
-         >
-            <div class="icon-box dark"  >
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
+            data-aos-delay="100">
+            <div class="icon-box dark">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
               <h4 class="title"><a href="">Internship opportunity</a></h4>
               <p class="description">
@@ -438,7 +438,7 @@
             </div>
           </div>
 
-          <div class=" column col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
             data-aos-delay="200">
             <div class="icon-box dark">
               <div class="icon"><i class="bx bx-file"></i></div>
@@ -454,7 +454,7 @@
             </div>
           </div>
 
-          <div class=" column col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
             data-aos-delay="300">
             <div class="icon-box dark">
               <div class="icon"><i class="bx bx-tachometer"></i></div>
@@ -468,7 +468,7 @@
             </div>
           </div>
 
-          <div class="column col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"  data-aos="fade-up"
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
             data-aos-delay="400">
             <div class="icon-box dark">
               <div class="icon"><i class="bx bx-layer"></i></div>
@@ -629,7 +629,7 @@
        </section>
     <!-- =======End Upcoming Events Section ======= --> -->
     <!-- ======= Events Section ======= -->
-    <section id="event" class="event">
+   <section id="event" class="event">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Events</h2>
@@ -759,8 +759,8 @@
         <div class="section-title">
           <h2>Team</h2>
           <p>
-            Teamwork is the ability to work together towards a common vision. Our team and Mentors are experts in Open
-            Source filed and many more tech stacks the team is working on.
+            Teamwork is the ability to work together towards a common vision. Our team and mentors are experts in Open
+            Source field and are working on different tech stacks currently.
             .
           </p>
         </div>
@@ -1332,24 +1332,32 @@
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
-                </div>
+              
+                <div class="spandiv"> <small class="small" id="nameerr"></small></div>
+              </div>
+
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
-                </div>
+               
+                <div class="spandiv"> <small class="small"  id="emailerr"></small></div>
+              </div>
+
               </div>
               <div class="form-group mt-3">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required />
               </div>
+              <div class="spandiv"> <small class="small"  id="subjecterr"></small></div>
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message"
                   required></textarea>
               </div>
+              <div class="spandiv"> <small class="small"  id="messageerr"></small></div>
               <div class="my-3">
                 <div name="sent_message" class="" id="sent_message">
                 </div>
               </div>
               <div class="text-center">
-                <button type="submit">Send Message</button>
+                <button type="submit" onclick="handleSubmit()">Send Message</button>
               </div>
             </form>
           </div>
@@ -1480,4 +1488,132 @@
   }
 </script>
 
+
+<script>
+  
+ //console.log(form);
+
+function handleSubmit(){
+
+   if(checkInputs())
+   return true;
+   else
+   return false;
+
+ };
+
+ function checkInputs()
+ {
+       const username = document.getElementById('name');
+      const useremail = document.getElementById('email');
+      const subject = document.getElementById('subject');
+      const message = document.getElementById('message');
+
+      //get values from input fields
+      const emailval = useremail.value.trim();
+      const usernameval = username.value.trim();
+      const subjectval = subject.value.trim();
+      const messageval = message.value.trim();
+
+      if(usernameval === '')
+      {
+          username.classList.add('error');
+          username.classList.remove('success');
+
+          let error = document.getElementById('nameerr');
+          error.innerText = 'Please enter your name';
+      }else
+      {
+       console.log("correct");
+         username.classList.remove('error');
+         username.classList.add('success');
+         let error = document.getElementById('nameerr');
+         error.innerText = '';
+      }
+
+      if(emailval === '')
+      {
+         useremail.classList.add('error');
+          useremail.classList.remove('success');
+
+          let error = document.getElementById('emailerr');
+          error.innerText = 'Please enter your Email';
+      }
+      else if(!validateEmail(emailval))
+      {
+       useremail.classList.add('error');
+          useremail.classList.remove('success');
+
+          let error = document.getElementById('emailerr');
+          error.innerText = 'Please enter valid Email';
+      }
+      else
+      {
+        useremail.classList.remove('error');
+         useremail.classList.add('success');
+         let error = document.getElementById('emailerr');
+         error.innerText = '';
+      }
+      
+
+      if(subjectval === '')
+      {
+          subject.classList.add('error');
+          subject.classList.remove('success');
+
+          let error = document.getElementById('subjecterr');
+          error.innerText = 'Please enter subject';
+      }else
+      {
+         subject.classList.remove('error');
+         subject.classList.add('success');
+         let error = document.getElementById('subjecterr');
+         error.innerText = '';
+      }
+
+      if(messageval === '')
+      {
+          message.classList.add('error');
+          message.classList.remove('success');
+
+          let error = document.getElementById('messageerr');
+          error.innerText = 'Please enter your message';
+      }else
+      {
+         message.classList.remove('error');
+         message.classList.add('success');
+         let error = document.getElementById('messageerr');
+         error.innerText = '';
+      }
+
+
+      if(emailval !== '' && usernameval !== '' && subjectval !== '' && messageval !== '')
+      {
+       console.log("complete");
+       useremail.value='';
+       username.value='';
+       subject.value='';
+       message.value='';
+        
+      
+       username.classList.remove('success');
+       useremail.classList.remove('success');
+       subject.classList.remove('success');
+       message.classList.remove('success');
+
+       return true;
+      }
+     
+ }
+
+ function validateEmail(mail) 
+ {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+   {
+     return true;
+   }
+   return false;
+ }
+</script>
 </html>
+
