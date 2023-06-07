@@ -1039,13 +1039,13 @@ section {
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 18px;
-  /* color: #fff;*/
+  color: rgba(255, 255, 255, 0.7);
 }
 .team .member .member-info-content span {
   font-style: italic;
   display: block;
   font-size: 13px;
-  /* color: #fff;*/
+  color: rgba(255, 255, 255, 0.7);
 }
 .team .member .social {
   position: absolute;
