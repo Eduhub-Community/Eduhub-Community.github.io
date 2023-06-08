@@ -1272,7 +1272,6 @@ section {
 .contact .info-box {
   color: #2d405f;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
   background: #fff;
 }
@@ -1290,11 +1289,11 @@ section {
 .contact .info-box p {
   padding: 0;
   line-height: 24px;
+  color: #3b4ef8;
   font-size: 14px;
   margin-bottom: 0;
 }
 .contact .javascript-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
   background: #fff;
 }
