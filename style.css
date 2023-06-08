@@ -1063,13 +1063,14 @@ section {
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 18px;
+  color: #fff;
   /* color: #fff;*/
 }
 .team .member .member-info-content span {
   font-style: italic;
   display: block;
   font-size: 13px;
-  /* color: #fff;*/
+  color: #fff;
 }
 .team .member .social {
   position: absolute;
@@ -1078,11 +1079,11 @@ section {
   right: 0;
   height: 48px;
   transition: bottom ease-in-out 0.4s;
-  text-align: center;
+  text-align: center;z
 }
 .team .member .social a {
-  transition: color 0.3s;
-  color: rgba(255, 255, 255, 0.7);
+  /* transition: color 0.3s; */
+  /* color: rgba(255, 255, 255, 0.7); */
   margin: 0 10px;
   display: inline-block;
 }
@@ -1111,6 +1112,10 @@ section {
 .team .member:hover .social {
   bottom: 0;
   transition: bottom ease-in-out 0.4s;
+}
+
+.team .member:hover .member-info-content h4{
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
