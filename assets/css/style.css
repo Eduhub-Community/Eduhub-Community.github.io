@@ -723,6 +723,31 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Our Events
+--------------------------------------------------------------*/
+
+.our-event-container{
+  width: 50%;
+  display: flex;
+  justify-items: center;
+  margin: 0 auto;
+}
+@media (max-width: 992px) {
+  .our-event-container {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .our-event-container {
+    width: 90%;
+  }
+}
+@media (max-width: 425px) {
+  .our-event-container {
+    width: 100%;
+  }
+}
+/*--------------------------------------------------------------
 # Events
 --------------------------------------------------------------*/
 .event-container {
@@ -1549,7 +1574,7 @@ section {
     Ubuntu, sans-serif;
   font-size: 100%;
   height: 50px;
-  line-height: 1.15;
+  line-height: 50px;
   margin: 12px 0 0;
   outline: none;
   overflow: hidden;
@@ -1562,7 +1587,7 @@ section {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 50%;
+  width: 100%;
 }
 /* 
 .button-9:focus {
