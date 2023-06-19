@@ -1,12 +1,12 @@
-
 ## welcome to the official GitHub repository of Eduhub Community Website
- Eduhub is a community of the people, for the people and by the people. 
- Our vision is to create an environment where people can learn and apply technical knowledge together.
- Our mission is to build a strong technical community which is open-minded and has an intense desire for consistent learning from one another in the community. We have been conducting and organizing numerous Open Source Programs, Hackathons, Meetups, Conferences and 1:1 Mentorships.
 
-### An Open Source project Website built using HTML, CSS, JavaScript and Bootstrap Php 
+Eduhub is a community of the people, for the people and by the people.
+Our vision is to create an environment where people can learn and apply technical knowledge together.
+Our mission is to build a strong technical community which is open-minded and has an intense desire for consistent learning from one another in the community. We have been conducting and organizing numerous Open Source Programs, Hackathons, Meetups, Conferences and 1:1 Mentorships.
 
-![image](https://eduhubcommunity.tech/assets/img/Eduhub%20Logo%20(2).png)
+### An Open Source project Website built using HTML, CSS, JavaScript and Bootstrap Php
+
+![image](<https://eduhubcommunity.tech/assets/img/Eduhub%20Logo%20(2).png>)
 
 <h1 align="center">GSSOC'23 Accepted </h1>
 <br>
@@ -21,14 +21,16 @@
 </h2>
 
 ## How to contribute
+
 ## Contributing
+
 1. Fork it
 2. Create your feature branch `(git checkout -b my-new-feature)`
 3. Commit your changes `(git commit -m 'Add some feature')`
 4. In case of multiple commits squash them. You can find guide here
-4. Run the tests with Go Live and make sure all tests are passed.
-5. Push your branch `(git push origin my-new-feature)`
-6. Create a new Pull Request, following the template
+5. Run the tests with Go Live and make sure all tests are passed.
+6. Push your branch `(git push origin my-new-feature)`
+7. Create a new Pull Request, following the template
 
 Questions can be asked by raising an `Issue`.
 
@@ -127,7 +129,6 @@ or
 
 </div>
 
-
 <h2 align=center> OUR VALUABLE CONTRIBUTORS✨ </h2>
 <p align="center">
   
@@ -140,4 +141,3 @@ or
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
-
