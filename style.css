@@ -1276,6 +1276,13 @@ section {
   padding: 20px 0 30px 0;
   background: #fff;
 }
+.contact .maps iframe{
+  color: #2d405f;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+  background: #fff;
+}
 .contact .info-box i {
   font-size: 32px;
   color: #3b4ef8;
@@ -1407,10 +1414,13 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+.foot{
+  background-color: #466393;
+}
 #footer {
   color: #444444;
   font-size: 14px;
-  /* background: #f1f3ff; */
+  /* background-color: #466393 !important; */
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 #footer .footer-top {
@@ -1427,6 +1437,7 @@ section {
   line-height: 1;
   font-weight: 700;
   color: #2d405f;
+  /* color: black; */
 }
 #footer .footer-top .footer-contact p {
   font-size: 14px;
