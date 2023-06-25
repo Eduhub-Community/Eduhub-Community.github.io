@@ -303,7 +303,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: white;
+  background: rgba(29, 41, 60, 0.9);
   transition: 0.3s;
   z-index: 999;
 }
@@ -329,7 +329,7 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 18px;
-  color: #2d405f;
+  color: white;
 }
 .navbar-mobile a:hover,
 .navbar-mobile .active,
