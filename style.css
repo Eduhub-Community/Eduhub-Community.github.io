@@ -530,6 +530,7 @@ section {
   margin-bottom: 30px;
 }
 .about .content p {
+  text-align: justify;
   margin-bottom: 30px;
 }
 .about .content .about-btn {
@@ -606,6 +607,8 @@ section {
 .features .content h3 {
   font-weight: 600;
   font-size: 26px;
+  text-align: justify;
+ 
 }
 
 .features .content p {
@@ -626,6 +629,7 @@ section {
 }
 .features .content p:last-child {
   margin-bottom: 0;
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
@@ -749,9 +753,9 @@ section {
 /*--------------------------------------------------------------
 # Events
 --------------------------------------------------------------*/
-.event-container {
+/* .event-container { */
   /* border-radius: 10px; */
-}
+/* } */
 .event .section-title h2 {
   text-align: center;
 
@@ -1079,7 +1083,7 @@ section {
   right: 0;
   height: 48px;
   transition: bottom ease-in-out 0.4s;
-  text-align: center;z
+  text-align: center;
 }
 .team .member .social a {
   /* transition: color 0.3s; */
@@ -1598,4 +1602,4 @@ section {
 /* INTERNSHIPS */
 .internship-imgs {
   border-radius: 5px;
-}
+} 
