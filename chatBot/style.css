@@ -85,7 +85,7 @@ select {
 
 
 /* icons dots */
-.bx-message-dots{
+.bx-message-dots {
     color: rgb(51, 49, 49);
 }
 
@@ -246,7 +246,7 @@ select {
 .chatbox-message-item.sent {
     align-self: flex-end;
     background: var(--blue);
-    color:black;
+    color: black;
     border-radius: .75rem 0 .75rem .75rem;
 }
 
@@ -311,7 +311,7 @@ select {
     display: flex;
 }
 
-.bx-send{
+.bx-send {
     color: rgb(48, 64, 74);
 }
 
