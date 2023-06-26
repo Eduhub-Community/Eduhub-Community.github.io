@@ -1525,9 +1525,16 @@ section {
 .loc-icon i{
   padding-top: 25px;
   margin-right: 20px;
-  font-size: 40px;
+  font-size: 30px;
   display: flex;
+  margin-top: -20px;
+  transition: .6s;
 }
+.loc-icon i:hover{
+transform: scale(1.19);
+color: orange;
+}
+
 #footer .footer-top .footer-links ul a {
   color: white;
   transition: 0.3s;
@@ -1535,12 +1542,34 @@ section {
   line-height: 1;
 }
 #footer .footer-top .footer-links ul a:hover {
-  text-decoration: underline;
-  font-size: 19px;
-  transition: 0.5s;
-  /* color: #3b4ef8; */
   color: white;
 }
+.hvr-eff{
+  position: relative;
+}
+.hvr-eff::after{
+  content: " ";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  transition: 0.5s;
+background-color: white;
+height: 2px;
+}
+.hvr-eff:hover::after{
+width:100%;
+}
+
+.bx-chevron-right{
+transition: .5s;
+}
+.hvr-li:hover .bx-chevron-right{
+ 
+  transform: rotate(90deg);
+}
+ 
+
 #footer .footer-newsletter {
   font-size: 15px;
 }
@@ -1587,7 +1616,7 @@ section {
   color: white;
 }
 #footer .footer-newsletter form input[type="submit"]:hover {
-  background: #949fff;
+  background: #1b2053;
 }
 #footer .credits {
   padding-top: 5px;
@@ -1601,6 +1630,7 @@ section {
 #footer .social-links a {
   font-size: 30px;
   display: inline-block;
+  transition: .5s;
   
   /* background: #e7eafe; */
   color: white;
@@ -1616,6 +1646,7 @@ section {
 }
 #footer .social-links a:hover:nth-child(1){
   background-color: #4267B2;
+  border-radius: 50%;
   
 }
 #footer .social-links a:hover:nth-child(2){
@@ -1624,15 +1655,19 @@ background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #c
 background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+border-radius: 50%;
 }
 #footer .social-links a:hover:nth-child(3){
   background-color: #FF0000;
+  border-radius: 50%;
 }
 #footer .social-links a:hover:nth-child(4){
   background-color: #0e76a8;
+  border-radius: 50%;
 }
 #footer .social-links a:hover:nth-child(5){
   background-color: #1DA1F2;
+  border-radius: 50%;
 }
 #footer .social-links a:hover {
   /* background: #a7aeed; */
