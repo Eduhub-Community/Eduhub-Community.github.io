@@ -753,6 +753,13 @@ section {
 --------------------------------------------------------------*/
 .event-container {
   /* border-radius: 10px; */
+  display: flex;
+  flex-direction: column;
+}
+.event-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .event .section-title h2 {
   text-align: center;
