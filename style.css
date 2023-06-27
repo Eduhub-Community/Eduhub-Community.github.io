@@ -702,6 +702,10 @@ section {
   margin-bottom: 0;
 }
 
+.features{
+  margin: auto;
+}
+
 /*--------------------------------------------------------------
 # Steps
 --------------------------------------------------------------*/
@@ -754,6 +758,10 @@ section {
 .services {
   background: #2d405f;
   padding-bottom: 80px;
+}
+
+.content{
+  /* flex-direction: column; */
 }
 
 .services .section-title h2,
