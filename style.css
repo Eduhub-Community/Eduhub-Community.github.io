@@ -875,6 +875,11 @@ section {
   opacity: 0;
 }
 
+.event-container{
+  display: flex;
+  flex-direction: row;
+}
+
 .event .event-wrap img {
   transition: all ease-in-out 0.3s;
 }
