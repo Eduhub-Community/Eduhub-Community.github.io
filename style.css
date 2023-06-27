@@ -760,10 +760,6 @@ section {
   padding-bottom: 80px;
 }
 
-.content{
-  /* flex-direction: column; */
-}
-
 .services .section-title h2,
 .services .section-title p {
   color: #fff;
