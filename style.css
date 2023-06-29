@@ -589,6 +589,7 @@ section {
 }
 
 .about .content p {
+  text-align: justify;
   margin-bottom: 30px;
 }
 
@@ -677,6 +678,8 @@ section {
 .features .content h3 {
   font-weight: 600;
   font-size: 26px;
+  text-align: justify;
+ 
 }
 
 .features .content p {
@@ -700,6 +703,7 @@ section {
 
 .features .content p:last-child {
   margin-bottom: 0;
+  text-align: justify;
 }
 
 .features{
@@ -825,6 +829,7 @@ section {
 /*--------------------------------------------------------------
 # Events
 --------------------------------------------------------------*/
+
 .event .event-item {
   margin-bottom: 30px;
   padding: 10px;
@@ -834,6 +839,7 @@ section {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
+
   text-align: center;
 }
 
@@ -1744,4 +1750,6 @@ section {
 /* INTERNSHIPS */
 .internship-imgs {
   border-radius: 5px;
+
 }
+
