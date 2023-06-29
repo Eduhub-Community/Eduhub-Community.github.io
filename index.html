@@ -1269,7 +1269,7 @@
                 </div>
               </div>
               <div class="text-center">
-                <button type="submit">Send Message</button>
+                <button type="submit" onclick=SendMail()>Send Message</button>
               </div>
             </form>
           </div>
@@ -1426,6 +1426,52 @@
       })
     }
   </script>
+  <!-- Toastify library for successfull sending of email message --> 
+  <script> 
+    function SendMail() { 
+      var name = document.getElementById('name').value; 
+      var email = document.getElementById('email').value; 
+      var subject = document.getElementById('subject').value; 
+      var message = document.getElementById('message').value; 
+   
+      if (name === '' || email === '' || subject === '' || message === '') { 
+        showToast('Please fill in all fields.', 'error'); 
+        return false; 
+      } 
+   
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+      if (!email.match(emailRegex)) { 
+        showToast('Please enter a valid email address.', 'error'); 
+        return false; 
+      } 
+   
+      showToast('Your message has been sent successfully!', 'success'); 
+   
+      document.getElementById('name').value = ''; 
+      document.getElementById('email').value = ''; 
+      document.getElementById('subject').value = ''; 
+      document.getElementById('message').value = ''; 
+   
+      return true; 
+    } 
+   
+    function showToast(message, type) { 
+      var toast = document.createElement('div'); 
+      toast.className = 'toast ' + type; 
+      toast.textContent = message; 
+   
+      document.body.appendChild(toast); 
+   
+      setTimeout(function () { 
+        toast.classList.add('show'); 
+        setTimeout(function () { 
+          toast.classList.remove('show'); 
+          document.body.removeChild(toast); 
+        }, 3000); // Adjust the duration (in milliseconds) as needed 
+      }, 100); 
+    } 
+  </script>
+
 </body>
 
 </html>
