@@ -328,13 +328,14 @@ h6 {
 .navbar-mobile a,
 .navbar-mobile a:focus {
   padding: 10px 20px;
-  font-size: 15px;
-  color: #2d405f;
+  font-size: 18px;
+  color: white;
 }
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
   color: #3b4ef8;
+  text-decoration: underline;
 }
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
@@ -752,6 +753,13 @@ section {
 --------------------------------------------------------------*/
 .event-container {
   /* border-radius: 10px; */
+  display: flex;
+  flex-direction: column;
+}
+.event-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .event .section-title h2 {
   text-align: center;
