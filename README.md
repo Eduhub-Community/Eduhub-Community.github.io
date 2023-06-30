@@ -11,7 +11,7 @@ Our mission is to build a strong technical community which is open-minded and ha
 <h1 align="center">GSSOC'23 Accepted </h1>
 <br>
 <p align="center">
-<b><a href="https://discord.com/invite/b3ZJfH9eeN" target="_blank">
+<b><a href="https://discord.gg/EUsGuYBKQa" target="_blank">
 <font size="67"> Be a part of our Community on Discord🚀</font>
 </a>
 </b>
