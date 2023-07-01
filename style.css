@@ -240,7 +240,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #3b4ef8;
 }
 
@@ -293,11 +293,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
   color: #3b4ef8;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -309,7 +309,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -321,7 +321,7 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -345,10 +345,15 @@ h6 {
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
+    background-color: #fff;
   }
 
   .navbar ul {
     display: none;
+  }
+
+  .navbar li {
+    margin-bottom: 0.6rem;
   }
 }
 
@@ -359,7 +364,8 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(29, 41, 60, 0.9);
+  /* background: rgba(29, 41, 60, 0.9); */
+  backdrop-filter: blur(4rem);
   transition: 0.3s;
   z-index: 999;
 }
@@ -388,12 +394,12 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #2d405f;
+  color: #fff;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: #3b4ef8;
 }
 
@@ -428,11 +434,11 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
   color: #3b4ef8;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -671,7 +677,7 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
-.features .content+.content {
+.features .content + .content {
   margin-top: 100px;
 }
 
@@ -679,7 +685,6 @@ section {
   font-weight: 600;
   font-size: 26px;
   text-align: justify;
- 
 }
 
 .features .content p {
@@ -706,7 +711,7 @@ section {
   text-align: justify;
 }
 
-.features{
+.features {
   margin: auto;
 }
 
@@ -764,9 +769,9 @@ section {
   padding-bottom: 80px;
 }
 
-/* .content{ */
-  /* flex-direction: column; */
-/* } */
+/* .content{
+  flex-direction: column;
+} */
 
 .services .section-title h2,
 .services .section-title p {
@@ -889,7 +894,7 @@ section {
   opacity: 0;
 }
 
-.event-container{
+.event-container {
   display: flex;
   flex-direction: row;
 }
@@ -980,7 +985,10 @@ section {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   /* background-color: #fff;*/
@@ -988,7 +996,10 @@ section {
   border: 1px solid #3b4ef8;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: #3b4ef8;
 }
 
@@ -1011,7 +1022,7 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -1210,10 +1221,12 @@ section {
 }
 
 .team .member:hover .member-info {
-  background: linear-gradient(0deg,
-      rgba(12, 17, 26, 0.9) 0%,
-      rgba(20, 29, 43, 0.8) 20%,
-      rgba(0, 212, 255, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(12, 17, 26, 0.9) 0%,
+    rgba(20, 29, 43, 0.8) 20%,
+    rgba(0, 212, 255, 0) 100%
+  );
   opacity: 1;
   transition: 0.4s;
 }
@@ -1228,21 +1241,20 @@ section {
   transition: bottom ease-in-out 0.4s;
 }
 
-
-.bi-twitter:hover{
- color: #1da1f2;
+.bi-twitter:hover {
+  color: #1da1f2;
 }
 
-.bi-facebook:hover{
+.bi-facebook:hover {
   color: #3b5998;
 }
 
-.bi-instagram:hover{
-  color:  #E4405F;
+.bi-instagram:hover {
+  color: #e4405f;
 }
 
-.bi-linkedin:hover{
-  color: #0A66C2;
+.bi-linkedin:hover {
+  color: #0a66c2;
 }
 /*--------------------------------------------------------------
 # Pricing
@@ -1447,7 +1459,7 @@ section {
   font-weight: 600;
 }
 
-.contact .javascript-email-form .error-message br+br {
+.contact .javascript-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1550,11 +1562,11 @@ section {
   margin: 15px 0;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #3d5782;
@@ -1766,6 +1778,4 @@ section {
 /* INTERNSHIPS */
 .internship-imgs {
   border-radius: 5px;
-
 }
-
