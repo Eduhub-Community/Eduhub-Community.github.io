@@ -764,9 +764,9 @@ section {
   padding-bottom: 80px;
 }
 
-.content{
+/* .content{ */
   /* flex-direction: column; */
-}
+/* } */
 
 .services .section-title h2,
 .services .section-title p {
@@ -1228,6 +1228,22 @@ section {
   transition: bottom ease-in-out 0.4s;
 }
 
+
+.bi-twitter:hover{
+ color: #1da1f2;
+}
+
+.bi-facebook:hover{
+  color: #3b5998;
+}
+
+.bi-instagram:hover{
+  color:  #E4405F;
+}
+
+.bi-linkedin:hover{
+  color: #0A66C2;
+}
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
