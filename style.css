@@ -588,6 +588,7 @@ section {
 }
 
 .about .content p {
+  text-align: justify;
   margin-bottom: 30px;
 }
 
@@ -676,6 +677,8 @@ section {
 .features .content h3 {
   font-weight: 600;
   font-size: 26px;
+  text-align: justify;
+ 
 }
 
 .features .content p {
@@ -699,6 +702,7 @@ section {
 
 .features .content p:last-child {
   margin-bottom: 0;
+  text-align: justify;
 }
 
 .features{
@@ -759,9 +763,9 @@ section {
   padding-bottom: 80px;
 }
 
-.content{
+/* .content{ */
   /* flex-direction: column; */
-}
+/* } */
 
 .services .section-title h2,
 .services .section-title p {
@@ -824,6 +828,7 @@ section {
 /*--------------------------------------------------------------
 # Events
 --------------------------------------------------------------*/
+
 .event .event-item {
   margin-bottom: 30px;
   padding: 10px;
@@ -833,6 +838,7 @@ section {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
+
   text-align: center;
 }
 
@@ -1221,6 +1227,22 @@ section {
   transition: bottom ease-in-out 0.4s;
 }
 
+
+.bi-twitter:hover{
+ color: #1da1f2;
+}
+
+.bi-facebook:hover{
+  color: #3b5998;
+}
+
+.bi-instagram:hover{
+  color:  #E4405F;
+}
+
+.bi-linkedin:hover{
+  color: #0A66C2;
+}
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
@@ -1744,3 +1766,4 @@ section {
 .internship-imgs {
   border-radius: 5px;
 }
+
