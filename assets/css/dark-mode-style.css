@@ -1,10 +1,10 @@
-.dark-mode {
+.dark-mode{
   background-color: #121212;
   color: white;
 }
 body {
   background-color: white;
-  /* color: black; */
+  color: black;
 }
 .dark-mode-button {
   padding-left: 20px;
@@ -23,4 +23,86 @@ body {
 }
 .section-bg h2 {
   color: #fff !important;
+}
+
+.fa-moon {
+  font-size: 1.3em;
+  display: inline-block;
+  margin: 0 .8em;
+}
+
+.fa-sun {
+  display: none;
+  font-size: 1.3em;
+  margin: 0 .8em;
+}
+
+.dark-mode #hero h1 {
+  color: white;
+}
+
+.dark-mode #hero h2 {
+  color: white;
+}
+
+.dark-mode .section-title h2{
+  color: white;
+}
+
+.dark-mode #footer {
+  color: white !important;
+  background-color: #000;
+}
+
+.dark-mode .footer-contact p{
+  color: #fff;
+}
+
+.dark-mode #footer .footer-top h4{
+  color: #fff;
+}
+
+.dark-mode #footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.dark-mode #footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.dark-mode #footer .footer-top .footer-links ul a {
+  color: #fff;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+.dark-mode #footer .footer-top .footer-links ul a:hover {
+  text-decoration: none;
+  color: #3b4ef8;
+}
+
+.dark-mode #footer .footer-newsletter {
+  font-size: 15px;
+}
+
+.dark-mode #footer .footer-newsletter h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.dark-mode #footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.dark-mode #footer .footer-top .footer-contact p{
+  color: #fff;
 }
