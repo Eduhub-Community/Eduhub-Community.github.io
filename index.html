@@ -4,6 +4,18 @@
 <head>
 
 
+<style>
+    #preloader {
+      background: white url("./Iphone-spinner-2.gif") no-repeat center center;
+      background-size: 5%;
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      z-index: 999999;
+    }
+    </style>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
 <div id="seo"></div>
 
@@ -50,7 +62,8 @@
 
 </head>
 
-<body>
+<body onload="myFunction()">
+  <div id="preloader"></div>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
@@ -1484,7 +1497,23 @@
 }
   </script>
 
+  function validateEmail(mail) {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+      return true;
+    }
+    return false;
+  }
+</script>
+<script>
 
+  var loader = document.getElementById("preloader");
+
+  function myFunction() {
+    preloader.style.display = "none";
+  }
+</script>
+</html>
+=======
 <!-- SEO SETTINGS -->
 <script type="application/ld+json">
 	{
