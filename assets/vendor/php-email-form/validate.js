@@ -44,7 +44,7 @@
         } else {
           displayError(
             thisForm,
-            "The reCaptcha javascript API url is not loaded!"
+            "The reCaptcha javascript API url is not loaded!",
           );
         }
       } else {
@@ -64,7 +64,7 @@
           return response.text();
         } else {
           throw new Error(
-            `${response.status} ${response.statusText} ${response.url}`
+            `${response.status} ${response.statusText} ${response.url}`,
           );
         }
       })
@@ -78,7 +78,7 @@
             data
               ? data
               : "Form submission failed and no error message returned from: " +
-                action
+                action,
           );
         }
       })
