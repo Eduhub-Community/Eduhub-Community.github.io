@@ -114,7 +114,7 @@
         this.nextElementSibling.classList.toggle("dropdown-active");
       }
     },
-    true
+    true,
   );
 
   /**
@@ -137,7 +137,7 @@
         scrollto(this.hash);
       }
     },
-    true
+    true,
   );
 
   /**
@@ -190,7 +190,7 @@
             AOS.refresh();
           });
         },
-        true
+        true,
       );
     }
   });

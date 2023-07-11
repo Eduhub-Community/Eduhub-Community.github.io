@@ -77,9 +77,9 @@ chatInput.addEventListener("keydown", (e) => {
   }
 });
 chatbotToggle.addEventListener("click", () =>
-  document.body.classList.toggle("show-chatbot")
+  document.body.classList.toggle("show-chatbot"),
 );
 chatbotCloseBtn.addEventListener("click", () =>
-  document.body.classList.remove("show-chatbot")
+  document.body.classList.remove("show-chatbot"),
 );
 sendChatBtn.addEventListener("click", handleChat);
