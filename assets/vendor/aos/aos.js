@@ -94,7 +94,7 @@
             : (x.disableMutationObserver ||
                 d.default.isSupported() ||
                 (console.info(
-                  '\n      aos: MutationObserver is not supported on this browser,\n      code mutations observing has been disabled.\n      You may have to call "refreshHard()" by yourself.\n    '
+                  '\n      aos: MutationObserver is not supported on this browser,\n      code mutations observing has been disabled.\n      You may have to call "refreshHard()" by yourself.\n    ',
                 ),
                 (x.disableMutationObserver = !0)),
               document
@@ -118,17 +118,17 @@
                   }),
               window.addEventListener(
                 "resize",
-                (0, s.default)(j, x.debounceDelay, !0)
+                (0, s.default)(j, x.debounceDelay, !0),
               ),
               window.addEventListener(
                 "orientationchange",
-                (0, s.default)(j, x.debounceDelay, !0)
+                (0, s.default)(j, x.debounceDelay, !0),
               ),
               window.addEventListener(
                 "scroll",
                 (0, u.default)(function () {
                   (0, b.default)(w, x.once);
-                }, x.throttleDelay)
+                }, x.throttleDelay),
               ),
               x.disableMutationObserver || d.default.ready("[data-aos]", O),
               w);
@@ -290,7 +290,7 @@
         t,
         (function () {
           return this;
-        })()
+        })(),
       );
     },
     function (e, t) {
@@ -432,7 +432,7 @@
         t,
         (function () {
           return this;
-        })()
+        })(),
       );
     },
     function (e, t) {

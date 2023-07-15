@@ -93,7 +93,7 @@
           logError(
             namespace +
               " not initialized. Cannot call methods, i.e. " +
-              pluginMethodStr
+              pluginMethodStr,
           );
           return;
         }
@@ -347,7 +347,7 @@
         "Style returned " +
           style +
           ". Are you running this code in a hidden iframe on Firefox? " +
-          "See https://bit.ly/getsizebug1"
+          "See https://bit.ly/getsizebug1",
       );
     }
     return style;
@@ -740,7 +740,7 @@
                 " on " +
                 elem.className +
                 ": " +
-                error
+                error,
             );
           }
           return;
@@ -1340,7 +1340,7 @@
       require("ev-emitter"),
       require("get-size"),
       require("fizzy-ui-utils"),
-      require("./item")
+      require("./item"),
     );
   } else {
     // browser global
@@ -1349,7 +1349,7 @@
       window.EvEmitter,
       window.getSize,
       window.fizzyUIUtils,
-      window.Outlayer.Item
+      window.Outlayer.Item,
     );
   }
 })(window, function factory(window, EvEmitter, getSize, utils, Item) {
@@ -1381,7 +1381,7 @@
           "Bad element for " +
             this.constructor.namespace +
             ": " +
-            (queryElement || element)
+            (queryElement || element),
         );
       }
       return;
@@ -2720,7 +2720,7 @@
     // CommonJS
     module.exports = factory(
       require("../layout-mode"),
-      require("masonry-layout")
+      require("masonry-layout"),
     );
   } else {
     // browser global
@@ -2916,7 +2916,7 @@
         matchesSelector,
         utils,
         Item,
-        LayoutMode
+        LayoutMode,
       );
     });
   } else if (typeof module == "object" && module.exports) {
@@ -2932,7 +2932,7 @@
       // include default layout modes
       require("isotope-layout/js/layout-modes/masonry"),
       require("isotope-layout/js/layout-modes/fit-rows"),
-      require("isotope-layout/js/layout-modes/vertical")
+      require("isotope-layout/js/layout-modes/vertical"),
     );
   } else {
     // browser global
@@ -2943,7 +2943,7 @@
       window.matchesSelector,
       window.fizzyUIUtils,
       window.Isotope.Item,
-      window.Isotope.LayoutMode
+      window.Isotope.LayoutMode,
     );
   }
 })(
@@ -2955,7 +2955,7 @@
     matchesSelector,
     utils,
     Item,
-    LayoutMode
+    LayoutMode,
   ) {
     // -------------------------- vars -------------------------- //
 
@@ -3310,7 +3310,7 @@
       // sort magic
       var itemSorter = getItemSorter(
         this.sortHistory,
-        this.options.sortAscending
+        this.options.sortAscending,
       );
       this.filteredItems.sort(itemSorter);
     };
@@ -3517,5 +3517,5 @@
     // -----  ----- //
 
     return Isotope;
-  }
+  },
 );
