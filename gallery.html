@@ -31,6 +31,9 @@
   <link rel="stylesheet" href="./assets/css/gallery-style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
 
+  <!-- Dark Mode CSS Files -->
+  <link href="assets/css/dark-mode-style.css" rel="stylesheet" />
+  <link href='https://css.gg/dark-mode.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -53,6 +56,9 @@
           <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
           <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
           <li><a class="getstarted scrollto" href="./index.html#upcoming-events">Explore</a></li>
+          <li>
+            <button onclick="myFunction()" class="dark-mode-button"><i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i><i class="gg-dark-mode"></i></button>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -522,14 +528,38 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+      function myFunction() {
+      var element = document.body;
+      let cards = document.querySelectorAll(".dark");
+      element.classList.toggle("dark-mode");
+      cards.forEach(card => {
+        card.classList.toggle('dark-card');
+      });
+
+      // Toggle the moon and sun icons
+      var moonIcon = document.querySelector(".fa-moon");
+      var sunIcon = document.querySelector(".fa-sun");
+
+      // Check the current display state of the moon icon
+      var moonDisplay = moonIcon.style.display;
+
+      if (moonDisplay === "none") {
+        // Display moon and hide sun
+        moonIcon.style.display = "inline-block";
+        sunIcon.style.display = "none";
+      } else {
+        // Hide moon and display sun
+        moonIcon.style.display = "none";
+        sunIcon.style.display = "inline-block";
+      }
+    }
+    </script>
 
     <!-- Local Script Files -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="./assets/js/gallery-scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-
-
 </body>
-
 </html>
