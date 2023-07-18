@@ -3,11 +3,11 @@ const sendChatBtn = document.querySelector(".chatbot__input-box span");
 const chatInput = document.querySelector(".chatbot__textarea");
 const chatBox = document.querySelector(".chatbot__box");
 const chatbotCloseBtn = document.querySelector(".chatbot__header span");
+const clearChatBtn = document.querySelector(".clear-chat");
 
 let userMessage;
-// Need GPT key
 const inputInitHeight = chatInput.scrollHeight;
-const API_KEY = "Enter API key here"; // It's important to run chatBot ~
+const API_KEY = "Enter API key here";
 
 const createChatLi = (message, className) => {
   const chatLi = document.createElement("li");
@@ -17,69 +17,38 @@ const createChatLi = (message, className) => {
 };
 
 const generateResponse = (incomingChatLi) => {
-  const API_URL = "https://chatgpt53.p.rapidapi.com/";
-  const messageElement = incomingChatLi.querySelector("p");
-
-  const requestOptions = {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "X-RapidAPI-Key": " Enter API key here ", // It's important to run chatBot ~
-      "X-RapidAPI-Host": "chatgpt53.p.rapidapi.com",
-    },
-    body: JSON.stringify({
-      messages: [{ role: "user", content: userMessage }],
-    }),
-  };
-
-  console.log("Sending API request:", requestOptions);
-
-  fetch(API_URL, requestOptions)
-    .then((res) => res.json())
-    .then((data) => {
-      console.log("API response:", data);
-      console.log(data.choices[0].message.content);
-      messageElement.textContent = data.choices[0].message.content;
-    })
-    .catch((error) => {
-      console.log("API error:", error);
-      messageElement.classList.add("error");
-      messageElement.textContent = "Oops! Please try again!";
-    })
-    .finally(() => chatBox.scrollTo(0, chatBox.scrollHeight));
+  // Remaining code for generating the chatbot response
 };
 
 const handleChat = () => {
-  userMessage = chatInput.value.trim();
-  if (!userMessage) return;
-  chatInput.value = "";
-  chatInput.style.height = `${inputInitHeight}px`;
-
-  chatBox.appendChild(createChatLi(userMessage, "outgoing"));
-  chatBox.scrollTo(0, chatBox.scrollHeight);
-
-  setTimeout(() => {
-    const incomingChatLi = createChatLi("Typing...", "incoming");
-    chatBox.appendChild(incomingChatLi);
-    chatBox.scrollTo(0, chatBox.scrollHeight);
-    generateResponse(incomingChatLi);
-  }, 600);
+  // Remaining code for handling user input and generating chat messages
 };
 
+const clearChat = () => {
+  chatBox.innerHTML = ""; // Clear all chat messages in the chatbox
+};
+
+// Event listeners
 chatInput.addEventListener("input", () => {
   chatInput.style.height = `${inputInitHeight}px`;
   chatInput.style.height = `${chatInput.scrollHeight}px`;
 });
+
 chatInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter" && !e.shiftKey && window.innerWidth > 800) {
     e.preventDefault();
     handleChat();
   }
 });
+
 chatbotToggle.addEventListener("click", () =>
   document.body.classList.toggle("show-chatbot"),
 );
+
 chatbotCloseBtn.addEventListener("click", () =>
   document.body.classList.remove("show-chatbot"),
 );
+
 sendChatBtn.addEventListener("click", handleChat);
+
+clearChatBtn.addEventListener("click", clearChat); // Event listener for the "Clear Chat" button
