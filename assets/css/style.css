@@ -648,11 +648,14 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
+
 .column {
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
   background-image: linear-gradient(to right, #141e30, #243b55);
 }
 .column:hover {
+
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .services {
@@ -678,6 +681,7 @@ section {
   /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
   /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+
 }
 .services .icon-box:hover {
   transform: scale(0.9);
@@ -685,6 +689,7 @@ section {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .services .icon {
+  
   margin-bottom: 15px;
 }
 .services .icon i {
@@ -692,9 +697,11 @@ section {
   line-height: 1;
   color: #2d405f;
   background: #eff2f8;
+
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
     rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
 
   padding: 20px;
   margin-bottom: 10px;
@@ -715,6 +722,7 @@ section {
 }
 .services .title a:hover {
   color: #022358;
+
 }
 .services .description {
   font-size: 17px;
@@ -727,27 +735,81 @@ section {
 # Our Events
 --------------------------------------------------------------*/
 
+.event .section-title h2{
+  text-align: center;
+  
+  font-size: 49px;
+  color: #1a58bc;
+}
+.event .section-title p{
+  font-size: 22px;
+}
+.event .event-item {
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.event #event-flters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+
+
 .our-event-container{
   width: 50%;
   display: flex;
   justify-items: center;
   margin: 0 auto;
+
 }
 @media (max-width: 992px) {
   .our-event-container {
     width: 70%;
   }
 }
+
+.event #event-flters li:hover,
+.event #event-flters li.filter-active {
+  background: #3b4ef8;
+
 @media (max-width: 768px) {
   .our-event-container {
     width: 90%;
   }
+
 }
 @media (max-width: 425px) {
   .our-event-container {
     width: 100%;
   }
 }
+
+.event .event-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  background: rgba(140, 155, 173, 0.6);
+  border-radius: 10px;
+}
+.event .event-wrap :hover{
+  transform: scale3d(2);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.event .event-wrap::before {
+  content: "";
+  background: rgba(27, 28, 29, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0%;
+
 /*--------------------------------------------------------------
 # Events
 --------------------------------------------------------------*/
@@ -766,6 +828,7 @@ section {
 
   font-size: 49px;
   color: #1a58bc;
+
 }
 .event .section-title p {
   font-size: 22px;
@@ -787,7 +850,8 @@ section {
   text-transform: uppercase;
   padding: 0;
   font-weight: bold;
-  /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
   margin: 0;
   font-style: italic;
 }
