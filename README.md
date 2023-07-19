@@ -99,22 +99,15 @@ or
 ## Maintainers (Our Team for GSSOC'23)
 
 <table>
-<tr>
-    <td align="center" style="word-wrap: break-word; width: 50; height: 50">
-        <a href=https://github.com/souvikg544/>
-            <img src="https://media.licdn.com/dms/image/D4D03AQH61lX3UvuDSg/profile-displayphoto-shrink_800_800/0/1679553457608?e=1691020800&v=beta&t=Bw9dKc2LSy60Au_G5Uhbf7BRGzF5bFJNVF54vb0mYV8" width=250px height=295px
-                 <br />
-            <sub style="font-size:14px"><b>SOUVIK GHOSH</b></sub>
-        </a>
-        </td>
-        <td align="center" style="word-wrap: break-word; width: 200.0; height: 200.0">
-        <a href=https://github.com/AshAman999>
-           <img src="https://media.licdn.com/dms/image/C4E03AQE6p0QwBpHLOQ/profile-displayphoto-shrink_800_800/0/1642423321172?e=1691020800&v=beta&t=hgsBqad04ucYxrEq7AkVfyJwRmbJCgFzguNCOwDwBTA" width=250px height=295px />
-            <br />
-            <sub style="font-size:14px"><b>Aman Raj</b></sub>
-        </a>  
+  <tr>
+  <td align="center" style="word-wrap: break-word; width: 200.0; height: 200.0">
+    <a href=https://github.com/AshAman999>
+      <img src="https://media.licdn.com/dms/image/C4E03AQE6p0QwBpHLOQ/profile-displayphoto-shrink_800_800/0/1642423321172?e=1691020800&v=beta&t=hgsBqad04ucYxrEq7AkVfyJwRmbJCgFzguNCOwDwBTA" width=250px height=295px />
+      <br />
+      <sub style="font-size:14px"><b>Aman Raj</b></sub>
+    </a>  
     </td>
-   </table>
+</table>
    
    
 ## Join Our Community for Discussion
