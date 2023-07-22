@@ -565,9 +565,9 @@ section {
   display: inline-block;
   padding: 15px 0;
 }
-.clients img:hover {
+/* .clients img:hover {
   transform: scale(1.15);
-}
+} */
 @media (max-width: 768px) {
   .clients img {
     max-width: 40%;
