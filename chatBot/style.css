@@ -28,9 +28,11 @@
 }
 .chatbot {
   position: fixed;
-  bottom: 100px;
+  bottom: 90px;
   right: 40px;
-  width: 420px;
+  width: 400px;
+  height: 490px;
+  z-index: 9999;
   background-color: #f3f7f8;
   border-radius: 15px;
   box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1) 0 32px 64px -48px rgba(0, 0, 0, 0.5);
@@ -65,7 +67,7 @@
   color: #f3f7f8;
 }
 .chatbot__box {
-  height: 510px;
+  height: 450px;
   overflow-y: auto;
   padding: 30px 20px 100px;
 }
