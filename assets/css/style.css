@@ -451,10 +451,10 @@ section {
   background-color: #f6f8fb;
 }
 
-.section-title {
+/* .section-title {
   text-align: center;
   padding-bottom: 30px;
-}
+} */
 .section-title h1 {
   font-size: 32px;
   font-weight: bold;
@@ -1758,3 +1758,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 .internship-imgs {
   border-radius: 5px;
 }
+}}}

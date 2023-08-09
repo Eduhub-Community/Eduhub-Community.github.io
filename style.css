@@ -532,10 +532,10 @@ section {
   background-color: #f6f8fb;
 }
 
-.section-title {
+/* .section-title {
   text-align: center;
   padding-bottom: 30px;
-}
+} */
 
 .section-title h1 {
   font-size: 32px;
@@ -1783,4 +1783,3 @@ section {
 .internship-imgs {
   border-radius: 5px;
 }
-v
