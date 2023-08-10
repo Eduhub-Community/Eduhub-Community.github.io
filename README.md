@@ -122,9 +122,10 @@ or
 
 </div>
 
-##  ✨ Thank You for Your Contribution!
+## ✨ Thank You for Your Contribution!
 
 Thanks a lot for spending your time helping Eduhub. Thanks a lot! Keep rocking 🍻
+
 <p>
   <img src="https://api.vaunt.dev/v1/github/entities/Eduhub-Community/repositories/Eduhub-Community.github.io/contributors?format=svg&limit=54" width="600" height"250" />
 </p> 
