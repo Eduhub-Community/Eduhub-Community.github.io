@@ -23,7 +23,7 @@
 
                 const issueNumber = issue.number;
 
-                const comment = `Hello @${author}! \n Thank you for raising this issue. \nPlease make sure to follow our [Contributing Guidelines.](https://github.com/Eduhub-Community/Eduhub-Community.github.io/blob/main/contributors.html) \nDon't forget to ⭐ our [Pentesting-and-Hacking-Scripts.](https://github.com/Eduhub-Community/Eduhub-Community.github.io)\n\nOur review team will carefully assess the issue and reach out to you soon!\n We appreciate your patience!`;
+                const comment = `Hello @${author}! \n Thank you for raising this issue. \nPlease make sure to follow our [Contributing Guidelines.](https://github.com/Eduhub-Community/Eduhub-Community.github.io/blob/main/contributors.html) \nDon't forget to ⭐ our [Edhub-Community.github.io .](https://github.com/Eduhub-Community/Eduhub-Community.github.io)\n\nOur review team will carefully assess the issue and reach out to you soon!\n We appreciate your patience!`;
 
                 const { owner, repo } = context.repo;
 
