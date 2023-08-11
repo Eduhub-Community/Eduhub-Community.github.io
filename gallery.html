@@ -14,7 +14,9 @@
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Krub:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
-
+  <!-- material -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,12 +27,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
 
   <!-- Template Main CSS File -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 
   <!--Local CSS File-->
   <link rel="stylesheet" href="./assets/css/gallery-style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
 
+  <!-- Dark Mode CSS Files -->
+  <link href="assets/css/dark-mode-style.css" rel="stylesheet" />
+  <link href='https://css.gg/dark-mode.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -53,6 +59,9 @@
           <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
           <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
           <li><a class="getstarted scrollto" href="./index.html#upcoming-events">Explore</a></li>
+          <li>
+            <button onclick="myFunction()" class="dark-mode-button"><i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i><i class="gg-dark-mode"></i></button>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -62,14 +71,14 @@
   <!-- End Header -->
 
   <!-- ======= Breadcrumbs ======= -->
-  <section id="breadcrumbs" class="breadcrumbs">
+  <!-- <section id="breadcrumbs" class="breadcrumbs">
     <div class="container">
       <ol>
         <li><a href="index.html">Home</a></li>
         <li>Gallery</li>
       </ol>
     </div>
-  </section>
+  </section> -->
   <!-- End Breadcrumbs -->
 
   <section id="gallery" class="gallery">
@@ -297,135 +306,23 @@
     <h2></h2>
     <br>
 
-    <!-- ======= Footer ======= -->
-    
-    <!-- <footer id="footer">
+    <!-- ======= Footer ======= -->    
+    <footer id="footer">
       <div class="footer-top">
         <div class="container">
-          <h3>EduHub Community</h3>
           <div class="row">
             <div class="col-lg-3 col-md-6 footer-contact">
-              
+              <h3>EduHub Community</h3>
               <p>
                 Chomu Udaipuria Mod, <br />
                 Jaipur,<br />
                 Rajasthan. <br /><br />
+                <!-- <strong>Phone:</strong> +1 5589 55488 55<br /> -->
                 <strong>Email:</strong>
               <p>
                 <a target="_blank" href="mailto:eduhub.community@gmail.com">eduhub.community@gmail.com</a>
               </p><br />
               </p>
-            </div>
-
-            <div class="col-lg-2 col-md-6 footer-links">
-              <h4>Quick Access</h4>
-              <ul>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="./index.html#hero">Home</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="./index.html#about">About</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="./index.html#services">Opportunities</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="./index.html#event">Events</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="./index.html#team">Team</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Outreach</h4>
-              <ul>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="https://linktr.ee/EduhubCommunity">Social Media</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="https://drive.google.com/file/d/1G3uDu9hbX7_oFa2B1bikeaTBPr2wBxs-/view?usp=sharing">MSME</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a
-                    href="codeOfConduct.html">Code
-                    of Conduct</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a
-                    href="https://docs.google.com/forms/d/1XUnnCtcWtDgnCSQmBgqPjUQ6H5KlE8Ek1LJpXX76Hg4/viewform?edit_requested=true">Reach
-                    out to us for any Queries</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-lg-4 col-md-6 footer-newsletter">
-              <h4>Subscribe</h4>
-              <p>Stay Updated for our Exciting events</p>
-              <form action="" method="post">
-                <input type="email" name="email" /><input type="submit" value="Subscribe" />
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container d-md-flex py-4">
-        <div class="social-links text-center text-md-right pt-3 pt-md-0">
-          <a target="_blank" href="https://www.facebook.com/eduhubcommunity" class="facebook"><i
-              class="bx bxl-facebook"></i></a>
-          <a target="_blank" href="https://www.instagram.com/eduhub_community/" class="instagram"><i
-              class="bx bxl-instagram"></i></a>
-          <a target="_blank" href="https://www.youtube.com/channel/UCPpG3qqMH_0QDvSzHyjjZJQ" class="google-plus"><i
-              class="bx bxl-youtube"></i></a>
-          <a target="_blank" href="https://www.linkedin.com/company/eduhub-community" class="linkedin"><i
-              class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
-    </footer> -->
-
-    <footer id="footer" class="foot">
-      <div class="footer-top">
-        <div class="container">
-          <h3 >EduHub Community</h3>
-          <div class="row">
-            <div class="col-lg-3 col-md-6 footer-contact">
-              
-              <div class="address">
-                <div class="loc-icon">
-                   <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <p>
-                  
-                  Chomu Udaipuria Mod, <br />
-                  Jaipur,<br />
-                  Rajasthan. <br /><br />
-                  </p>
-                  </div>
-                  <!-- <strong>Phone:</strong> +1 5589 55488 55<br /> -->
-                  <strong>Email:</strong>
-                <p>
-                <a target="_blank" class="mail" href="mailto:eduhub.community@gmail.com">eduhub.community@gmail.com</a>
-              </p><br>
-              <br>
-              <div class="social-links text-md-right pt-3 pt-md-0">
-                <a target="_blank" href="https://www.facebook.com/eduhubcommunity" class="facebook"><i
-                    class="bx bxl-facebook"></i></a>
-                <a target="_blank" href="https://www.instagram.com/eduhub_community/" class="instagram"><i
-                    class="bx bxl-instagram"></i></a>
-                <a target="_blank" href="https://www.youtube.com/channel/UCPpG3qqMH_0QDvSzHyjjZJQ" class="google-plus"><i
-                    class="bx bxl-youtube"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/company/eduhub-community" class="linkedin"><i
-                    class="bx bxl-linkedin"></i></a>
-                <a target="_blank" href="https://twitter.com/CommunityEduhub" class="twitter"><i class="bx bxl-twitter"></i></a>
-              </div>
-  
             </div>
   
             <div class="col-lg-2 col-md-6 footer-links">
@@ -449,20 +346,18 @@
                   <a href="#team">Team</a>
                 </li>
               </ul>
-  
             </div>
-            
-              <br>
+  
             <div class="col-lg-3 col-md-6 footer-links">
               <h4>Our Outreach</h4>
               <ul>
                 <li>
                   <i class="bx bx-chevron-right"></i>
-                  <a href="https://linktr.ee/EduhubCommunity">Social Media</a>
+                  <a href="https://linktr.ee/EduhubCommunity" target="_blank">Social Media</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>
-                  <a href="https://drive.google.com/file/d/1G3uDu9hbX7_oFa2B1bikeaTBPr2wBxs-/view?usp=sharing">MSME</a>
+                  <a href="https://drive.google.com/file/d/1G3uDu9hbX7_oFa2B1bikeaTBPr2wBxs-/view?usp=sharing" target="_blank">MSME</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i> <a href="codeOfConduct.html">Code of Conduct</a>
@@ -472,15 +367,13 @@
                   <a
                     href="https://docs.google.com/forms/d/1XUnnCtcWtDgnCSQmBgqPjUQ6H5KlE8Ek1LJpXX76Hg4/viewform?edit_requested=true">Reach
                     out to us for any Queries</a>
-                    
                 </li>
               </ul>
             </div>
   
             <div class="col-lg-4 col-md-6 footer-newsletter">
-            
-              <h4>Subscribe: </h4>
-              <p class="stay">Stay Updated for our Exciting events</p>
+              <h4>Subscribe</h4>
+              <p>Stay Updated for our Exciting events</p>
               <form action="" method="post">
                 <input type="email" name="email" /><input type="submit" value="Subscribe" />
               </form>
@@ -490,7 +383,8 @@
       </div>
   
       <div class="container d-md-flex py-4">
-        <!-- <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
           <a target="_blank" href="https://www.facebook.com/eduhubcommunity" class="facebook"><i
               class="bx bxl-facebook"></i></a>
           <a target="_blank" href="https://www.instagram.com/eduhub_community/" class="instagram"><i
@@ -500,10 +394,9 @@
           <a target="_blank" href="https://www.linkedin.com/company/eduhub-community" class="linkedin"><i
               class="bx bxl-linkedin"></i></a>
           <a target="_blank" href="https://twitter.com/CommunityEduhub" class="twitter"><i class="bx bxl-twitter"></i></a>
-        </div> -->
+        </div>
       </div>
-    </footer>
-    
+    </footer>    
     <!-- End Footer -->
 
 
@@ -511,7 +404,7 @@
     <div id="preloader"></div>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
         class="bi bi-arrow-up-short"></i></a>
-
+  </div>
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -522,14 +415,38 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+      function myFunction() {
+      var element = document.body;
+      let cards = document.querySelectorAll(".dark");
+      element.classList.toggle("dark-mode");
+      cards.forEach(card => {
+        card.classList.toggle('dark-card');
+      });
+
+      // Toggle the moon and sun icons
+      var moonIcon = document.querySelector(".fa-moon");
+      var sunIcon = document.querySelector(".fa-sun");
+
+      // Check the current display state of the moon icon
+      var moonDisplay = moonIcon.style.display;
+
+      if (moonDisplay === "none") {
+        // Display moon and hide sun
+        moonIcon.style.display = "inline-block";
+        sunIcon.style.display = "none";
+      } else {
+        // Hide moon and display sun
+        moonIcon.style.display = "none";
+        sunIcon.style.display = "inline-block";
+      }
+    }
+    </script>
 
     <!-- Local Script Files -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="./assets/js/gallery-scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-
-
 </body>
-
 </html>

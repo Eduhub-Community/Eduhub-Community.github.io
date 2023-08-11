@@ -93,7 +93,7 @@ h6 {
 
 .back-to-top i {
   font-size: 28px;
-  color: #111;
+  color:#111;
   /* color: #fff;*/
   line-height: 0;
 }
@@ -339,7 +339,7 @@ h6 {
 }
 
 /* .mobile-nav-toggle.bi-x { */
-/* color: #fff; */
+  /* color: #fff; */
 /* } */
 
 @media (max-width: 991px) {
@@ -532,10 +532,10 @@ section {
   background-color: #f6f8fb;
 }
 
-.section-title {
+/* .section-title {
   text-align: center;
   padding-bottom: 30px;
-}
+} */
 
 .section-title h1 {
   font-size: 32px;
@@ -765,6 +765,7 @@ section {
 --------------------------------------------------------------*/
 .services {
   background: #2d405f;
+  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
   padding-bottom: 80px;
 }
 
@@ -793,6 +794,8 @@ section {
 
 .services .icon-box:hover {
   transform: scale(1.08);
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+
 }
 
 .services .icon {
@@ -829,7 +832,6 @@ section {
   line-height: 28px;
   margin-bottom: 0;
 }
-
 /*--------------------------------------------------------------
 # Events
 --------------------------------------------------------------*/
@@ -902,6 +904,7 @@ section {
   transition: all ease-in-out 0.3s;
 }
 
+
 .event .event-wrap .event-info {
   opacity: 0;
   position: absolute;
@@ -917,7 +920,6 @@ section {
   align-items: flex-start;
   padding: 10px;
 }
-
 .event .event-wrap .event-info h4 {
   font-size: 20px;
   /* color: #fff;*/
@@ -1122,8 +1124,8 @@ section {
 # Team
 --------------------------------------------------------------*/
 /* .team { */
-/* background: #fff; */
-/* padding: 35px 7rem; */
+  /* background: #fff; */
+  /* padding: 35px 7rem; */
 /* } */
 
 .founder-img {
@@ -1211,7 +1213,7 @@ section {
 }
 
 /* .team .member .social a:hover { */
-/* color: #fff;*/
+  /* color: #fff;*/
 /* } */
 
 .team .member .social i {
@@ -1239,6 +1241,7 @@ section {
   bottom: 0;
   transition: bottom ease-in-out 0.4s;
 }
+
 
 .bi-twitter:hover {
   color: #1da1f2;
@@ -1396,7 +1399,7 @@ section {
 }
 
 /* .faq .faq-list .collapsed { */
-/* color: black; */
+  /* color: black; */
 /* } */
 .faq .faq-list .collapsed:hover {
   color: #3b4ef8;
@@ -1615,7 +1618,9 @@ section {
 #footer {
   color: #000000;
   font-size: 14px;
+
   background: #f1f3ff;
+
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
