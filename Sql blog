@@ -1,0 +1,3 @@
+What does SQL do? You can use SQL to write a simple query that gets the data exactly as it is recorded in the database. But you can also use SQL to aggregate and group data, filter it, perform various mathematical operations on it, connect data from numerous tables, label it, and more. And this is the read-only side of SQL. It can also be used to change and delete data in a database and perform other data administration tasks.
+
+As a software tester, you’ll mostly be interested in getting data from databases. At times, you’ll also be changing data in a database. So, let’s have a look at the situations where you could use SQL.
