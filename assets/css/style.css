@@ -32,6 +32,29 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
+::-webkit-scrollbar {
+  width: 15px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3B4EF8;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: orange; 
+}
+
+
 #blinking {
   margin-top: 10px;
   height: 50px;
