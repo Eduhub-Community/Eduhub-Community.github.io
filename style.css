@@ -1423,7 +1423,9 @@ section {
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
-  background: #fff;
+  border-radius: 8px;
+  background: #e2e5fe;
+
 }
 
 .contact .info-box i {
@@ -1449,7 +1451,8 @@ section {
 .contact .javascript-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
-  background: #fff;
+  border-radius: 8px;
+  background: #e2e5fe;
 }
 
 .contact .javascript-email-form .error-message {
@@ -1503,15 +1506,19 @@ section {
 
 .contact .javascript-email-form input:focus,
 .contact .javascript-email-form textarea:focus {
-  border-color: #8ea5ca;
+  border-color: #3b4ef8;
 }
 
 .contact .javascript-email-form input {
   padding: 10px 15px;
+  background-color: #e2e5fe;
+  border-color: #8ea5ca;
 }
 
 .contact .javascript-email-form textarea {
   padding: 12px 15px;
+  background-color: #e2e5fe;
+  border-color: #8ea5ca;
 }
 
 .contact .javascript-email-form button[type="submit"] {
@@ -1525,6 +1532,36 @@ section {
 
 .contact .javascript-email-form button[type="submit"]:hover {
   background: #0a22f6;
+}
+.toast { 
+  visibility: hidden; 
+  min-width: 250px; 
+  margin-left: -125px; 
+  color: #fff; 
+  text-align: center; 
+  border-radius: 2px; 
+  padding: 16px; 
+  position: fixed; 
+  left: 50%; 
+  bottom: 30px; 
+  transform: translateX(-20%); 
+  font-size: 17px; 
+  z-index: 9999; 
+  opacity: 0; 
+  transition: opacity 0.3s; 
+} 
+ 
+.toast.success { 
+  background-color: #38c172; 
+} 
+ 
+.toast.error { 
+  background-color: #ff4b5a; 
+} 
+ 
+.toast.show { 
+  visibility: visible; 
+  opacity: 1; 
 }
 
 @-webkit-keyframes animate-loading {
