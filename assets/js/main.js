@@ -96,11 +96,27 @@
   /**
    * Mobile nav toggle
    */
-  on("click", ".mobile-nav-toggle", function (e) {
+
+  function toggleMobileNav(){
     select("#navbar").classList.toggle("navbar-mobile");
     this.classList.toggle("bi-list");
     this.classList.toggle("bi-x");
+  }
+  function handleScroll(){
+    const navbar = select("#navbar")
+    if(navbar.classList.contains("navbar-mobile")){
+      toggleMobileNav();
+    }
+  }
+  on("click", ".mobile-nav-toggle", function (e) {
+    toggleMobileNav();
   });
+
+  let prevScrollPos = window.scrollY;
+  window.addEventListener('scroll', () => {
+    handleScroll();
+    prevScrollPos = window.scrollY;
+  })
 
   /**
    * Mobile nav dropdowns activate
