@@ -2,10 +2,10 @@
   "object" == typeof exports && "object" == typeof module
     ? (module.exports = t())
     : "function" == typeof define && define.amd
-    ? define([], t)
-    : "object" == typeof exports
-    ? (exports.AOS = t())
-    : (e.AOS = t());
+      ? define([], t)
+      : "object" == typeof exports
+        ? (exports.AOS = t())
+        : (e.AOS = t());
 })(this, function () {
   return (function (e) {
     function t(o) {
@@ -110,12 +110,12 @@
               ["complete", "interactive"].indexOf(document.readyState) > -1
                 ? j(!0)
                 : "load" === x.startEvent
-                ? window.addEventListener(x.startEvent, function () {
-                    j(!0);
-                  })
-                : document.addEventListener(x.startEvent, function () {
-                    j(!0);
-                  }),
+                  ? window.addEventListener(x.startEvent, function () {
+                      j(!0);
+                    })
+                  : document.addEventListener(x.startEvent, function () {
+                      j(!0);
+                    }),
               window.addEventListener(
                 "resize",
                 (0, s.default)(j, x.debounceDelay, !0),

@@ -7,10 +7,10 @@
   typeof exports === "object" && typeof module !== "undefined"
     ? (module.exports = factory())
     : typeof define === "function" && define.amd
-    ? define(factory)
-    : ((global =
-        typeof globalThis !== "undefined" ? globalThis : global || self),
-      (global.bootstrap = factory()));
+      ? define(factory)
+      : ((global =
+          typeof globalThis !== "undefined" ? globalThis : global || self),
+        (global.bootstrap = factory()));
 })(this, function () {
   "use strict";
 
@@ -2729,8 +2729,8 @@
         roundOffsets === true
           ? roundOffsetsByDPR(offsets)
           : typeof roundOffsets === "function"
-          ? roundOffsets(offsets)
-          : offsets,
+            ? roundOffsets(offsets)
+            : offsets,
       _ref3$x = _ref3.x,
       x = _ref3$x === void 0 ? 0 : _ref3$x,
       _ref3$y = _ref3.y,
@@ -3134,8 +3134,8 @@
     return clippingParent === viewport
       ? rectToClientRect(getViewportRect(element))
       : isHTMLElement(clippingParent)
-      ? getInnerBoundingClientRect(clippingParent)
-      : rectToClientRect(getDocumentRect(getDocumentElement(element)));
+        ? getInnerBoundingClientRect(clippingParent)
+        : rectToClientRect(getDocumentRect(getDocumentElement(element)));
   } // A "clipping parent" is an overflowable container with the characteristic of
   // clipping (or hiding) overflowing elements with a position different from
   // `initial`
@@ -3465,8 +3465,8 @@
           ? right
           : left
         : isStartVariation
-        ? bottom
-        : top;
+          ? bottom
+          : top;
 
       if (referenceRect[len] > popperRect[len]) {
         mainVariationSide = getOppositePlacement(mainVariationSide);
@@ -4066,8 +4066,8 @@
             reference: isElement(reference)
               ? listScrollParents(reference)
               : reference.contextElement
-              ? listScrollParents(reference.contextElement)
-              : [],
+                ? listScrollParents(reference.contextElement)
+                : [],
             popper: listScrollParents(popper),
           }; // Orders the modifiers based on their dependencies and `phase`
           // properties

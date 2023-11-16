@@ -2,8 +2,8 @@
   typeof exports === "object" && typeof module !== "undefined"
     ? (module.exports = factory())
     : typeof define === "function" && define.amd
-    ? define(factory)
-    : ((global = global || self), (global.GLightbox = factory()));
+      ? define(factory)
+      : ((global = global || self), (global.GLightbox = factory()));
 })(this, function () {
   "use strict";
 
@@ -1082,8 +1082,8 @@
               ? "Left"
               : "Right"
             : y1 - y2 > 0
-            ? "Up"
-            : "Down";
+              ? "Up"
+              : "Down";
         },
       },
       {
