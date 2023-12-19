@@ -1711,7 +1711,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
   /* color: #fff;*/
   text-decoration: none;
 }
-
+#footer .spacing{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /* BUTTON SPECIAL */
 /* CSS */
 .button-register {
