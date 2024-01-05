@@ -14,7 +14,9 @@
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Krub:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
-
+  <!-- material -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,14 +24,19 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
 
   <!-- Template Main CSS File -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 
   <!--Local CSS File-->
   <link rel="stylesheet" href="./assets/css/gallery-style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
 
+  <!-- Dark Mode CSS Files -->
+  <link href="assets/css/dark-mode-style.css" rel="stylesheet" />
+  <link href='https://css.gg/dark-mode.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -52,6 +59,9 @@
           <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
           <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
           <li><a class="getstarted scrollto" href="./index.html#upcoming-events">Explore</a></li>
+          <li>
+            <button onclick="myFunction()" class="dark-mode-button"><i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i><i class="gg-dark-mode"></i></button>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -61,14 +71,14 @@
   <!-- End Header -->
 
   <!-- ======= Breadcrumbs ======= -->
-  <section id="breadcrumbs" class="breadcrumbs">
+  <!-- <section id="breadcrumbs" class="breadcrumbs">
     <div class="container">
       <ol>
         <li><a href="index.html">Home</a></li>
         <li>Gallery</li>
       </ol>
     </div>
-  </section>
+  </section> -->
   <!-- End Breadcrumbs -->
 
   <section id="gallery" class="gallery">
@@ -103,7 +113,7 @@
        <div class="item event1 col-lg-3 col-md-4 col-6 col-sm">
         <a href="assets\img\events\DSC06217" class="fancylight popup-btn"
           data-fancybox-group="light" title="image title">
-          <img class="img-fluid" src="assets\img\events\DSC06217.JPG" alt="">
+          <img class="img-fluid" src="assets\img\events\DSC06217.JPG" alt="" loading="lazy">
         </a>
       </div>
       <div class="item event1 col-lg-3 col-md-4 col-6 col-sm">
@@ -111,7 +121,7 @@
           class="fancylight popup-btn" data-fancybox-group="light" title="image title">
           <img class="img-fluid"
             src="assets\img\events\DSC06227.JPG"
-            alt="">
+            alt="" loading="lazy">
         </a>
       </div>
       <div class="item event1 col-lg-3 col-md-4 col-6 col-sm">
@@ -119,7 +129,7 @@
           class="fancylight popup-btn" data-fancybox-group="light" title="image title">
           <img class="img-fluid"
             src="assets\img\events\DSC06190.JPG"
-            alt="">
+            alt="" loading="lazy">
         </a>
       </div>
       <div class="item event2 col-lg-3 col-md-4 col-6 col-sm">
@@ -127,7 +137,7 @@
           class="fancylight popup-btn" data-fancybox-group="light" title="image title">
           <img class="img-fluid"
             src="assets\img\events\DSC06220.JPG"
-            alt="">
+            alt="" loading="lazy">
         </a>
       </div>
       <div class="item event2 col-lg-3 col-md-4 col-6 col-sm">
@@ -135,7 +145,7 @@
           class="fancylight popup-btn" data-fancybox-group="light" title="image title">
           <img class="img-fluid"
             src="assets\img\events\DSC06492.JPG"
-            alt="">
+            alt="" loading="lazy">
         </a>
       </div>
       <div class="item event2 col-lg-3 col-md-4 col-6 col-sm">
@@ -143,7 +153,7 @@
           class="fancylight popup-btn" data-fancybox-group="light" title="image title">
           <img class="img-fluid"
             src="assets\img\events\DSC06226.JPG"
-            alt="">
+            alt="" loading="lazy">
         </a>
       </div>
 
@@ -152,7 +162,7 @@
           class="fancylight popup-btn" data-fancybox-group="light" title="image title">
           <img class="img-fluid"
             src="assets\img\events\group.JPG"
-            alt="">
+            alt="" loading="lazy">
         </a>
       </div>
 
@@ -161,7 +171,7 @@
           class="fancylight popup-btn" data-fancybox-group="light" title="image title">
           <img class="img-fluid"
             src="assets\img\events\founder.JPG"
-            alt="">
+            alt="" loading="lazy">
         </a>
       </div>
 
@@ -169,7 +179,7 @@
       <div class="item event1 col-lg-3 col-md-4 col-6 col-sm">
         <a href="assets\img\events\11.03.2022_19.16.52_REC.png" class="fancylight popup-btn"
           data-fancybox-group="light" title="image title">
-          <img class="img-fluid" src="assets\img\events\11.03.2022_19.16.52_REC.png" alt="">
+          <img class="img-fluid" src="assets\img\events\11.03.2022_19.16.52_REC.png" alt="" loading="lazy">
         </a>
       </div>
       <div class="item event1 col-lg-3 col-md-4 col-6 col-sm">
@@ -177,7 +187,7 @@
           class="fancylight popup-btn" data-fancybox-group="light" title="image title">
           <img class="img-fluid"
             src="assets\img\events\11.03.2022_19.13.57_REC.png"
-            alt="">
+            alt="" loading="lazy">
         </a>
       </div>
       <div class="item event1 col-lg-3 col-md-4 col-6 col-sm">
@@ -185,7 +195,7 @@
           class="fancylight popup-btn" data-fancybox-group="light" title="image title">
           <img class="img-fluid"
             src="assets\img\events\11.03.2022_19.18.03_REC.png"
-            alt="">
+            alt="" loading="lazy">
         </a>
       </div>
       <div class="item event2 col-lg-3 col-md-4 col-6 col-sm">
@@ -193,7 +203,7 @@
           class="fancylight popup-btn" data-fancybox-group="light" title="image title">
           <img class="img-fluid"
             src="assets\img\events\devrel.jpg"
-            alt="">
+            alt="" loading="lazy">
         </a>
       </div>
       <div class="item event2 col-lg-3 col-md-4 col-6 col-sm">
@@ -201,7 +211,7 @@
           class="fancylight popup-btn" data-fancybox-group="light" title="image title">
           <img class="img-fluid"
             src="assets\img\events\event-1.jpeg"
-            alt="">
+            alt="" loading="lazy">
         </a>
       </div>
       <div class="item event2 col-lg-3 col-md-4 col-6 col-sm">
@@ -209,7 +219,7 @@
           class="fancylight popup-btn" data-fancybox-group="light" title="image title">
           <img class="img-fluid"
             src="assets\img\events\event-2.jpeg"
-            alt="">
+            alt="" loading="lazy">
         </a>
       </div>
       <div class="item event2 col-lg-3 col-md-4 col-6 col-sm">
@@ -217,7 +227,7 @@
           class="fancylight popup-btn" data-fancybox-group="light" title="image title">
           <img class="img-fluid"
             src="assets\img\events\event-3.jpeg"
-            alt="">
+            alt="" loading="lazy">
         </a>
       </div>
       <div class="item event3 col-lg-3 col-md-4 col-6 col-sm">
@@ -225,7 +235,7 @@
           class="fancylight popup-btn" data-fancybox-group="light" title="image title">
           <img class="img-fluid"
             src="assets\img\events\event-4.jpeg"
-            alt="">
+            alt="" loading="lazy">
         </a>
       </div>
       <div class="item event3 col-lg-3 col-md-4 col-6 col-sm">
@@ -233,7 +243,7 @@
           class="fancylight popup-btn" data-fancybox-group="light" title="image title">
           <img class="img-fluid"
             src="assets\img\events\event-5.jpeg"
-            alt="">
+            alt="" loading="lazy">
         </a>
       </div>
       <div class="item event3 col-lg-3 col-md-4 col-6 col-sm">
@@ -241,7 +251,7 @@
           class="fancylight popup-btn" data-fancybox-group="light" title="image title">
           <img class="img-fluid"
             src="assets\img\events\event-6.jpeg"
-            alt="">
+            alt="" loading="lazy">
         </a>
       </div>
       <div class="item event4 col-lg-3 col-md-4 col-6 col-sm">
@@ -249,7 +259,7 @@
           class="fancylight popup-btn" data-fancybox-group="light" title="image title">
           <img class="img-fluid"
             src="assets\img\events\event-7.jpeg"
-            alt="">
+            alt="" loading="lazy">
         </a>
       </div>
       <div class="item event4 col-lg-3 col-md-4 col-6 col-sm">
@@ -257,7 +267,7 @@
           class="fancylight popup-btn" data-fancybox-group="light" title="image title">
           <img class="img-fluid"
             src="assets\img\events\event-8.jpeg"
-            alt="">
+            alt="" loading="lazy">
         </a>
       </div>
       <div class="item event4 col-lg-3 col-md-4 col-6 col-sm">
@@ -265,7 +275,7 @@
           class="fancylight popup-btn" data-fancybox-group="light" title="image title">
           <img class="img-fluid"
             src="assets\img\events\event-9.jpeg"
-            alt="">
+            alt="" loading="lazy">
         </a>
       </div>
       <div class="item event5 col-lg-3 col-md-4 col-6 col-sm">
@@ -273,7 +283,7 @@
           class="fancylight popup-btn" data-fancybox-group="light" title="image title">
           <img class="img-fluid"
             src="assets\img\events\event-10.jpeg"
-            alt="">
+            alt="" loading="lazy">
         </a>
       </div>
       <div class="item event5 col-lg-3 col-md-4 col-6 col-sm">
@@ -281,7 +291,7 @@
           class="fancylight popup-btn" data-fancybox-group="light" title="image title">
           <img class="img-fluid"
             src="assets\img\events\event-11.jpeg"
-            alt="">
+            alt="" loading="lazy">
         </a>
       </div>
       
@@ -296,7 +306,7 @@
     <h2></h2>
     <br>
 
-    <!-- ======= Footer ======= -->
+    <!-- ======= Footer ======= -->    
     <footer id="footer">
       <div class="footer-top">
         <div class="container">
@@ -314,45 +324,43 @@
               </p><br />
               </p>
             </div>
-
+  
             <div class="col-lg-2 col-md-6 footer-links">
               <h4>Quick Access</h4>
               <ul>
                 <li>
-                  <i class="bx bx-chevron-right"></i> <a href="./index.html#hero">Home</a>
+                  <i class="bx bx-chevron-right"></i> <a href="#hero">Home</a>
                 </li>
                 <li>
-                  <i class="bx bx-chevron-right"></i> <a href="./index.html#about">About</a>
+                  <i class="bx bx-chevron-right"></i> <a href="#about">About</a>
                 </li>
                 <li>
-                  <i class="bx bx-chevron-right"></i> <a href="./index.html#services">Opportunities</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="./index.html#event">Events</a>
+                  <i class="bx bx-chevron-right"></i> <a href="#services">Opportunities</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>
-                  <a href="./index.html#team">Team</a>
+                  <a href="#event">Events</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#team">Team</a>
                 </li>
               </ul>
             </div>
-
+  
             <div class="col-lg-3 col-md-6 footer-links">
               <h4>Our Outreach</h4>
               <ul>
                 <li>
                   <i class="bx bx-chevron-right"></i>
-                  <a href="https://linktr.ee/EduhubCommunity">Social Media</a>
+                  <a href="https://linktr.ee/EduhubCommunity" target="_blank">Social Media</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>
-                  <a href="https://drive.google.com/file/d/1G3uDu9hbX7_oFa2B1bikeaTBPr2wBxs-/view?usp=sharing">MSME</a>
+                  <a href="https://drive.google.com/file/d/1G3uDu9hbX7_oFa2B1bikeaTBPr2wBxs-/view?usp=sharing" target="_blank">MSME</a>
                 </li>
                 <li>
-                  <i class="bx bx-chevron-right"></i> <a
-                    href="codeOfConduct.html">Code
-                    of Conduct</a>
+                  <i class="bx bx-chevron-right"></i> <a href="codeOfConduct.html">Code of Conduct</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>
@@ -362,7 +370,7 @@
                 </li>
               </ul>
             </div>
-
+  
             <div class="col-lg-4 col-md-6 footer-newsletter">
               <h4>Subscribe</h4>
               <p>Stay Updated for our Exciting events</p>
@@ -373,7 +381,7 @@
           </div>
         </div>
       </div>
-
+  
       <div class="container d-md-flex py-4">
         <div class="social-links text-center text-md-right pt-3 pt-md-0">
           <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
@@ -385,9 +393,10 @@
               class="bx bxl-youtube"></i></a>
           <a target="_blank" href="https://www.linkedin.com/company/eduhub-community" class="linkedin"><i
               class="bx bxl-linkedin"></i></a>
+          <a target="_blank" href="https://twitter.com/CommunityEduhub" class="twitter"><i class="bx bxl-twitter"></i></a>
         </div>
       </div>
-    </footer>
+    </footer>    
     <!-- End Footer -->
 
 
@@ -395,7 +404,7 @@
     <div id="preloader"></div>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
         class="bi bi-arrow-up-short"></i></a>
-
+  </div>
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -406,14 +415,38 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+      function myFunction() {
+      var element = document.body;
+      let cards = document.querySelectorAll(".dark");
+      element.classList.toggle("dark-mode");
+      cards.forEach(card => {
+        card.classList.toggle('dark-card');
+      });
+
+      // Toggle the moon and sun icons
+      var moonIcon = document.querySelector(".fa-moon");
+      var sunIcon = document.querySelector(".fa-sun");
+
+      // Check the current display state of the moon icon
+      var moonDisplay = moonIcon.style.display;
+
+      if (moonDisplay === "none") {
+        // Display moon and hide sun
+        moonIcon.style.display = "inline-block";
+        sunIcon.style.display = "none";
+      } else {
+        // Hide moon and display sun
+        moonIcon.style.display = "none";
+        sunIcon.style.display = "inline-block";
+      }
+    }
+    </script>
 
     <!-- Local Script Files -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="./assets/js/gallery-scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-
-
 </body>
-
 </html>

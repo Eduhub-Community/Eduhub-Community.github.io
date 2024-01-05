@@ -1,6 +1,6 @@
 <h1 align="center">Hello There !! I'm Piyush Kumar Rai</h1>
 <h3 align="center">A Student and an aspiring Engineer</h3>
-<h3 align="center"> <a href="https://piyushkrrai.web.app" target="blank"> Visit My Website here 🌐 </a> </h3> 
+<h3 align="center"> <a href="https://piyushkrrai.web.app" target="blank"> Visit My Website here 🌐 </a> </h3>
 
 [![rice.png](https://github.com/PiyushKrRai/PiyushKrRai/blob/main/intro1.png)](https://piyushkrrai.web.app)
 
@@ -12,7 +12,7 @@
 
 - 📫 You can also email me at **raip7172@gmail.com**
 
-- ⚡ Fun fact **I use Arch btw** <a href="" target="blank"><img align="center" src="https://github.com/PiyushKrRai/PiyushKrRai/blob/main/arch.svg" alt="" height="30" width="40" /></a> 
+- ⚡ Fun fact **I use Arch btw** <a href="" target="blank"><img align="center" src="https://github.com/PiyushKrRai/PiyushKrRai/blob/main/arch.svg" alt="" height="30" width="40" /></a>
 
 <h3 align="left">Connect with me:</h3>
 <p align="justify">
