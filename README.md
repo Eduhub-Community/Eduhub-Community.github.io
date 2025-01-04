@@ -4,7 +4,7 @@ Eduhub is a community of the people, for the people and by the people.
 Our vision is to create an environment where people can learn and apply technical knowledge together.
 Our mission is to build a strong technical community which is open-minded and has an intense desire for consistent learning from one another in the community. We have been conducting and organizing numerous Open Source Programs, Hackathons, Meetups, Conferences and 1:1 Mentorships.
 
-### An Open Source project Website built using Love of community 
+### An Open Source project Website built using Love of community
 
 ## Overview
 
@@ -28,21 +28,25 @@ EDUHUB is a marketplace built on the **EDU Chain**, designed to support and grow
 ### 2025 Quarterly Roadmap
 
 #### Q1 (Jan - Mar 2025)
+
 - Finalize platform MVP.
 - Launch beta version with select communities.
 - Establish initial partnerships.
 
 #### Q2 (Apr - Jun 2025)
+
 - Full platform launch.
 - Expand marketing efforts.
 - Increase community and user base.
 
 #### Q3 (Jul - Sep 2025)
+
 - Scale platform features.
 - Enhance the reward system.
 - Strengthen customer support.
 
 #### Q4 (Oct - Dec 2025)
+
 - Expand globally.
 - Secure Series A funding.
 - Implement AI-driven community insights.
@@ -52,7 +56,6 @@ EDUHUB is a marketplace built on the **EDU Chain**, designed to support and grow
 - **Partnerships**: Collaborate with companies to offer exclusive deals to communities.
 - **Premium Listings**: Offer enhanced visibility for communities willing to pay.
 - **Commissions**: Earn commissions on reward distributions.
-
 
 <p align="center">
 <b><a href="https://discord.gg/EUsGuYBKQa" target="_blank">
@@ -140,8 +143,6 @@ or
 
 - Wait for your changes to be merged
 
-   
-   
 ## Join Our Community for Discussion
 
 <div align="center">
