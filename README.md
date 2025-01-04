@@ -4,12 +4,56 @@ Eduhub is a community of the people, for the people and by the people.
 Our vision is to create an environment where people can learn and apply technical knowledge together.
 Our mission is to build a strong technical community which is open-minded and has an intense desire for consistent learning from one another in the community. We have been conducting and organizing numerous Open Source Programs, Hackathons, Meetups, Conferences and 1:1 Mentorships.
 
-### An Open Source project Website built using HTML, CSS, JavaScript and Bootstrap Php
+### An Open Source project Website built using Love of community 
 
-![image](<https://eduhubcommunity.tech/assets/img/Eduhub%20Logo%20(2).png>)
+## Overview
 
-<h1 align="center">GSSOC'23 Accepted </h1>
-<br>
+EDUHUB is a marketplace built on the **EDU Chain**, designed to support and grow small to mid-sized communities. Our platform provides tools for community listing, roadmap building, and a blockchain-based reward system. By fostering collaboration and innovation, EDUHUB aims to empower communities to reach their full potential.
+
+## Features
+
+- **Community Listing**: Easily list and manage your community on our platform.
+- **Roadmap Builder**: Create and share actionable roadmaps with your community.
+- **Reward System**: Incentivize community participation with blockchain-based rewards.
+- **Admin Dashboard**: Comprehensive tools for community leaders to manage their groups.
+
+## Technology Stack
+
+- **Blockchain**: EDU Chain for secure and transparent transactions.
+- **Frontend**: Modern web frameworks for an intuitive user experience.
+- **Backend**: Scalable and robust backend infrastructure.
+
+## Roadmap
+
+### 2025 Quarterly Roadmap
+
+#### Q1 (Jan - Mar 2025)
+- Finalize platform MVP.
+- Launch beta version with select communities.
+- Establish initial partnerships.
+
+#### Q2 (Apr - Jun 2025)
+- Full platform launch.
+- Expand marketing efforts.
+- Increase community and user base.
+
+#### Q3 (Jul - Sep 2025)
+- Scale platform features.
+- Enhance the reward system.
+- Strengthen customer support.
+
+#### Q4 (Oct - Dec 2025)
+- Expand globally.
+- Secure Series A funding.
+- Implement AI-driven community insights.
+
+## Business Model
+
+- **Partnerships**: Collaborate with companies to offer exclusive deals to communities.
+- **Premium Listings**: Offer enhanced visibility for communities willing to pay.
+- **Commissions**: Earn commissions on reward distributions.
+
+
 <p align="center">
 <b><a href="https://discord.gg/EUsGuYBKQa" target="_blank">
 <font size="67"> Be a part of our Community on Discord🚀</font>
@@ -96,18 +140,6 @@ or
 
 - Wait for your changes to be merged
 
-## Maintainers (Our Team for GSSOC'23)
-
-<table>
-  <tr>
-  <td align="center" style="word-wrap: break-word; width: 200.0; height: 200.0">
-    <a href=https://github.com/AshAman999>
-      <img src="https://media.licdn.com/dms/image/C4E03AQE6p0QwBpHLOQ/profile-displayphoto-shrink_800_800/0/1642423321172?e=1691020800&v=beta&t=hgsBqad04ucYxrEq7AkVfyJwRmbJCgFzguNCOwDwBTA" width=250px height=295px />
-      <br />
-      <sub style="font-size:14px"><b>Aman Raj</b></sub>
-    </a>  
-    </td>
-</table>
    
    
 ## Join Our Community for Discussion
